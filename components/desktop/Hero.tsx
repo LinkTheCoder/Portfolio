@@ -12,6 +12,14 @@ const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
+    const img = document.createElement('img');
+    img.src = isAndroid ? SamsungWallpaper.src : Wallpaper.src;
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+  }, [isAndroid]);
+
+  useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
     if (userAgent.includes('android') || userAgent.includes('iphone') || userAgent.includes('ipad')) {
       setIsAndroid(true);
