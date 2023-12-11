@@ -7,18 +7,9 @@ import SamsungWallpaper from '../../public/img/SamsungWallpaper.png';
 import Nav from './nav/Nav';
 import NavMobile from '../mobile/nav/NavMobile';
 
-//
 const Hero = () => {
   const [isAndroid, setIsAndroid] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = document.createElement('img');
-    img.src = isAndroid ? SamsungWallpaper.src : Wallpaper.src;
-    img.onload = () => {
-      setImageLoaded(true);
-    };
-  }, [isAndroid]);
 
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
