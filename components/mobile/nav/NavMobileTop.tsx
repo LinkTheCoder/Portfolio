@@ -10,7 +10,7 @@ export default function NavMobileTop({ fixed }) {
     <>
      <nav className="left-0 right-0 bg-transparent">
       <div className="container flex justify-center mx-auto">
-            <ul className="flex flex-row space-x-1 list-none md:space-x-7">
+            <ul className="flex flex-row space-x-5 list-none md:space-x-7">
               <li className="nav-item">
             <AboutMeMobile/>
               </li>

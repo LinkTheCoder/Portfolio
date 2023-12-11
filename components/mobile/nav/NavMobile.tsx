@@ -21,17 +21,16 @@ export default function NavMobile({ fixed }) {
         }, 1000);
       });
   };
-  //
   return (
     <div className="fixed bottom-0 w-full">
       <NavMobileTop fixed={undefined} />
-      <nav className="left-0 right-0 bg-transparent">
+      <nav className="mb-4 mt-4 left-0 right-0 bg-transparent">
         <div className="container flex justify-center mx-auto">
-          <ul className="flex flex-row space-x-1 list-none md:space-x-7">
+          <ul className="flex flex-row space-x-3 list-none md:space-x-7">
             <li className="nav-item">
               <a href="https://www.google.com/">
                 <button className='px-1 py-1 bg-white rounded-2xl'>
-                  <Image className="w-56 h-auto md:w-14" src={Chrome} alt="image description" />
+                  <Image className="w-13 h-13 md:w-14 md:h-14" src={Chrome} alt="image description" />
                 </button>
               </a>
             </li>
@@ -39,21 +38,21 @@ export default function NavMobile({ fixed }) {
             <li className="nav-item">
               <a href="mailto:linkhaggman@gmail.com">
                 <button className='px-1 py-1 bg-white rounded-2xl'>
-                  <Image className="w-10 h-14 md:w-14 md:h-18" src={Gmail} alt="image description" />
+                  <Image className="w-13 h-13 md:w-14 md:h-14" src={Gmail} alt="image description" />
                 </button>
               </a>
             </li>
 
             <li className="nav-item">
               <button onClick={copyDiscordUsername} className="px-1 py-1 bg-indigo-500 rounded-2xl">
-                <Image className="w-56 h-auto md:w-14" src={DiscordIcon} alt="image description" />
+                <Image className="w-13 h-13 md:w-14 md:h-14" src={DiscordIcon} alt="image description" />
               </button>
             </li>
 
             <li className="nav-item">
               <a href="https://github.com/LinkTheCoder">
                 <button className="px-1 py-1 rounded-2xl bg-slate-600">
-                  <Image className="w-56 h-auto md:w-14" src={GitCatIcon} alt="image description" />
+                  <Image className="w-13 h-13 md:w-14 md:h-14" src={GitCatIcon} alt="image description" />
                 </button>
               </a>
             </li>
