@@ -21,7 +21,7 @@ export default function NavMobile({ fixed }) {
         }, 1000);
       });
   };
-  
+  //
   return (
     <div className="fixed bottom-0 w-full">
       <NavMobileTop fixed={undefined} />
