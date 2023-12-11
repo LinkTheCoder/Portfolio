@@ -23,7 +23,7 @@ export default function NavMobile({ fixed }) {
   };
   
   return (
-    <div className="absolute bottom-0 z-10 w-full">
+    <div className="fixed bottom-0 w-full">
       <NavMobileTop fixed={undefined} />
       <nav className="left-0 right-0 bg-transparent">
         <div className="container flex justify-center mx-auto">
@@ -39,7 +39,7 @@ export default function NavMobile({ fixed }) {
             <li className="nav-item">
               <a href="mailto:linkhaggman@gmail.com">
                 <button className='px-1 py-1 bg-white rounded-2xl'>
-                  <Image className="w-56 h-auto md:w-14" src={Gmail} alt="image description" />
+                  <Image className="w-10 h-14 md:w-14 md:h-18" src={Gmail} alt="image description" />
                 </button>
               </a>
             </li>
