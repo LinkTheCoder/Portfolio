@@ -7,6 +7,7 @@ import SamsungWallpaper from '../../public/img/SamsungWallpaper.png';
 import Nav from './nav/Nav';
 import NavMobile from '../mobile/nav/NavMobile';
 
+//
 const Hero = () => {
   const [isAndroid, setIsAndroid] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
