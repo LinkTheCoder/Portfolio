@@ -8,3 +8,6 @@
 📱 Modern design that resembles Android UI on mobiles & tablets!
 
 🖥️ Fullscreen mode available!
+
+## Guide
+Visit the project's wiki: [Portfolio Wiki](https://github.com/LinkTheCoder/Portfolio/wiki)
