@@ -67,7 +67,7 @@ export default function AboutMeMobile() {
                                 {/*body*/}
                                 <div className="relative flex-auto p-6 bg-slate-800">
                                     <div className="flex">
-                                        <ul className="flex-auto -space-y-6 text-lg leading-relaxed text-left text-slate-400">
+                                        <ul className="mb-2 flex-auto space-y-4 text-lg leading-relaxed text-left text-slate-400">
                                             <li><details><summary>👋 About</summary>Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. <br></br> I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps & bots</a>. <br></br>I enjoy as well to create <a className='text-blue-400 no-underline hover:underline' href='https://store.steampowered.com/developer/LinkTheDev'>PC games</a></details></li>
                                             <li><details><summary>📑 Resume</summary><a className='text-blue-400 no-underline hover:underline' href="https://www.linkedin.com/in/linkthedev/">LinkedIn</a></details></li>
                                             <li><details><summary>📧 Contact</summary><a className='text-blue-400 no-underline hover:underline' href='mailto:linkhaggman@gmail.com'>Email</a>, <a className='text-blue-400 no-underline hover:underline' href='https://discordapp.com/users/351263861103394817'>Discord</a></details></li>

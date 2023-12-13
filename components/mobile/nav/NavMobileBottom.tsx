@@ -25,7 +25,7 @@ export default function NavMobileBottom() {
   return (
     <nav className="left-0 right-0 bg-transparent">
       <div className="container flex justify-center mx-auto">
-        <ul className="flex flex-row list-none space-x-7">
+        <ul className="flex flex-row list-none space-x-10">
           <li className="nav-item">
             <AppsMobile />
           </li>

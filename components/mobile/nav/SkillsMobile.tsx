@@ -51,7 +51,7 @@ export default function SKillsMobile() {
               <div className="relative flex flex-col w-full border-0 rounded-lg shadow-lg outline-none focus:outline-none">
                {/*body*/}
                <div className="relative flex-auto p-6 bg-slate-800/90">
-                  <ul className="mt-4 -space-y-6 text-lg leading-relaxed text-left text-slate-400">
+                  <ul className="mt-4 mb-2 space-y-6 text-lg leading-relaxed text-left text-slate-400">
 
 <li><details><summary>🖥️ Code Languages</summary>HTML, CSS, JS, JSX, TS, TSX, NANI, MARKDOWN</details></li>
 <li><details><summary>⚙️ Frameworks</summary>REACT, NEXT, TAILWIND CSS</details></li>
