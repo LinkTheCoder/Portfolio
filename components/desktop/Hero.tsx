@@ -28,16 +28,25 @@ const Hero = () => {
   return (
     <div className='relative w-full h-screen overflow-hidden'>
       <div className="relative w-full h-full">
-        <Image
-          className='object-cover w-full h-full'
-          src={isAndroid ? SamsungWallpaper : Wallpaper}
-          alt="Wallpaper"
-          onLoad={handleImageLoad}
-        />
+        {isAndroid ? (
+          <Image
+            className='object-cover w-full h-full'
+            src={SamsungWallpaper}
+            alt="Samsung Wallpaper"
+            onLoad={handleImageLoad}
+          />
+        ) : (
+          <Image
+            className='object-cover w-full h-full'
+            src={Wallpaper}
+            alt="PC Wallpaper"
+            onLoad={handleImageLoad}
+          />
+        )}
         {imageLoaded && <div className='absolute top-0 left-0 w-full h-full bg-black/10'></div>}
       </div>
       <div className='absolute bottom-0 z-10 w-full'>
-       {isAndroid ? (
+        {isAndroid ? (
           <NavMobile fixed={undefined}/>
         ) : (
           <Nav fixed={undefined}/>
