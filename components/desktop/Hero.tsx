@@ -44,9 +44,9 @@ const Hero = () => {
       </div>
       <div className='absolute bottom-0 z-10 w-full'>
         {isAndroid ? (
-          <NavMobile fixed={undefined}/>
+          imageLoaded && <NavMobile fixed={undefined} />
         ) : (
-          <Nav fixed={undefined}/>
+          imageLoaded && <Nav fixed={undefined} />
         )}
       </div>
     </div>
