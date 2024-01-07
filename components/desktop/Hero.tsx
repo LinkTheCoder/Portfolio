@@ -10,11 +10,15 @@ import NavMobile from '../mobile/nav/NavMobile';
 const Hero = () => {
   const [isAndroid, setIsAndroid] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [selectedWallpaper, setSelectedWallpaper] = useState(null);
 
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
     if (userAgent.includes('android') || userAgent.includes('iphone') || userAgent.includes('ipad')) {
       setIsAndroid(true);
+      setSelectedWallpaper(SamsungWallpaper);
+    } else {
+      setSelectedWallpaper(Wallpaper);
     }
   }, []);
 
@@ -28,18 +32,11 @@ const Hero = () => {
   return (
     <div className='relative w-full h-screen overflow-hidden'>
       <div className="relative w-full h-full">
-        {isAndroid ? (
+        {selectedWallpaper && (
           <Image
             className='object-cover w-full h-full'
-            src={SamsungWallpaper}
-            alt="Samsung Wallpaper"
-            onLoad={handleImageLoad}
-          />
-        ) : (
-          <Image
-            className='object-cover w-full h-full'
-            src={Wallpaper}
-            alt="PC Wallpaper"
+            src={selectedWallpaper}
+            alt="Wallpaper"
             onLoad={handleImageLoad}
           />
         )}
