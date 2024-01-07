@@ -17,7 +17,14 @@ const Hero = () => {
       setIsAndroid(true);
     }
   }, []);
-  
+
+  const handleImageLoad = () => {
+    // Ensure that setImageLoaded is called only once
+    if (!imageLoaded) {
+      setImageLoaded(true);
+    }
+  };
+
   return (
     <div className='relative w-full h-screen overflow-hidden'>
       <div className="relative w-full h-full">
@@ -25,7 +32,7 @@ const Hero = () => {
           className='object-cover w-full h-full'
           src={isAndroid ? SamsungWallpaper : Wallpaper}
           alt="Wallpaper"
-          onLoad={() => setImageLoaded(true)}
+          onLoad={handleImageLoad}
         />
         {imageLoaded && <div className='absolute top-0 left-0 w-full h-full bg-black/10'></div>}
       </div>
