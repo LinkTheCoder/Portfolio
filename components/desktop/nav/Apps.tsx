@@ -24,6 +24,17 @@ export default function TrashModal() {
         })
     };
 
+    const copyDiscordUsername = () => {
+      const discordUsername = 'linkthedev';
+      navigator.clipboard.writeText(discordUsername)
+        .then(() => {
+          setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
+          setTimeout(() => {
+            setNoticeBox({ visible: false, message: '' });
+          }, 1000);
+        })
+    };
+
     return (
         <ul>  
             
@@ -105,14 +116,14 @@ export default function TrashModal() {
     </div>
 
     <div className="overflow-hidden rounded">
-    <a href="https://discord.gg/YqRJbuc5AZ"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+<button onClick={copyDiscordUsername} className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={Discord} alt="Discord"/>
       <div className="px-6 py-2">
         <p className="text-base text-slate-400">
         Discord
         </p>
       </div>
-      </button></a>
+      </button>
     </div>
 
     <div className="overflow-hidden rounded">

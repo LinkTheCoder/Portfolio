@@ -26,6 +26,17 @@ export default function TrashModal() {
         })
     };
   
+    const copyDiscordUsername = () => {
+      const discordUsername = 'linkthedev';
+      navigator.clipboard.writeText(discordUsername)
+        .then(() => {
+          setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
+          setTimeout(() => {
+            setNoticeBox({ visible: false, message: '' });
+          }, 1000);
+        })
+    };
+
     const handleButtonClick = (event) => {
         event.stopPropagation(); // Prevent click event from propagating to the document
         setShowModal(true);
@@ -112,9 +123,9 @@ export default function TrashModal() {
     </div>
 
     <div className="overflow-hidden rounded">
-    <a href="https://discord.gg/YqRJbuc5AZ"><button className="px-1 py-1 bg-indigo-500 rounded-2xl">
+   <button onClick={copyDiscordUsername} className="px-1 py-1 bg-indigo-500 rounded-2xl">
     <Image className="inline w-12 h-12 rounded-sm object" src={DiscordIcon} alt="Discord"/>
-    </button></a>
+    </button>
       <div className="py-2">
         <p className="text-base text-white">
         Discord
