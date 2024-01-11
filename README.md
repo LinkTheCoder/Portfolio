@@ -9,5 +9,7 @@
 
 🖥️ Fullscreen mode available!
 
+🖼️ Change background on PC!
+
 ## Guide
 Visit the project's wiki: [Portfolio Wiki](https://github.com/LinkTheCoder/Portfolio/wiki)
