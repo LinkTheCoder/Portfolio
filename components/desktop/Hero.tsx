@@ -1,7 +1,7 @@
-"use client"
-
+// Hero.tsx
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { useTheme } from '../../context/ThemeContext'; // Adjust the path based on your project structure
 import Wallpaper from '../../public/img/Wallpaper.jpg';
 import SamsungWallpaper from '../../public/img/SamsungWallpaper.png';
 import Nav from './nav/Nav';
@@ -10,20 +10,16 @@ import NavMobile from '../mobile/nav/NavMobile';
 const Hero = () => {
   const [isAndroid, setIsAndroid] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [selectedWallpaper, setSelectedWallpaper] = useState(null);
+  const { selectedWallpaper } = useTheme();
 
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
-    if (userAgent.includes('android') || userAgent.includes('iphone') || userAgent.includes('ipad')) {
-      setIsAndroid(true);
-      setSelectedWallpaper(SamsungWallpaper);
-    } else {
-      setSelectedWallpaper(Wallpaper);
-    }
+    setIsAndroid(userAgent.includes('android') || userAgent.includes('iphone') || userAgent.includes('ipad'));
   }, []);
 
+  const defaultWallpaper = isAndroid ? SamsungWallpaper : Wallpaper;
+
   const handleImageLoad = () => {
-    // Ensure that setImageLoaded is called only once
     if (!imageLoaded) {
       setImageLoaded(true);
     }
@@ -32,11 +28,18 @@ const Hero = () => {
   return (
     <div className='relative w-full h-screen overflow-hidden'>
       <div className="relative w-full h-full">
-        {selectedWallpaper && (
+        {selectedWallpaper ? (
           <Image
             className='object-cover w-full h-full'
             src={selectedWallpaper}
             alt="Wallpaper"
+            onLoad={handleImageLoad}
+          />
+        ) : (
+          <Image
+            className='object-cover w-full h-full'
+            src={defaultWallpaper}
+            alt="Default Wallpaper"
             onLoad={handleImageLoad}
           />
         )}
