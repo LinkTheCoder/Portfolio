@@ -8,6 +8,7 @@ import Github from '../../../public/img/Github.png';
 import Discord from '../../../public/img/Discord.png';
 import Linkedin from '../../../public/img/Linkedin.png';
 import Nintendo from '../../../public/img/Nintendo.png';
+import Youtube from '../../../public/img/Youtube.png';
 
 export default function TrashModal() {
     const [showModal, setShowModal] = React.useState(false);
@@ -124,6 +125,17 @@ export default function TrashModal() {
         </p>
       </div>
       </button>
+    </div>
+
+    <div className="overflow-hidden rounded">
+    <a href="https://youtube.com/@LinkTheDev"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Youtube} alt="Youtube"/>
+      <div className="px-6 py-2">
+        <p className="text-base text-slate-400">
+        Youtube
+        </p>
+      </div>
+      </button></a>
     </div>
 
     <div className="overflow-hidden rounded">

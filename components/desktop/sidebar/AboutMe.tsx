@@ -62,10 +62,9 @@ export default function Portfolio() {
                         <div className="flex flex-col items-center">
                               {profileImage !== null ? (
                         <Image
-                  className="inline object-cover h-full ml-2 rounded"
+                  className="inline object-cover h-full ml-2 rounded w-48"
                   src={profileImage}
                   alt={profileImage === Fursona ? "Fursona" : "Profile"}
-                  style={profileImage === Fursona ? { width: "250px" } : { width: "150px" }}
                 />
                          ) : null}
                 <button onClick={changeProfileImage} className="px-2 py-1 mt-4 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-700">
