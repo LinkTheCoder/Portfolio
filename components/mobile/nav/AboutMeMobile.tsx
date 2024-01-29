@@ -85,9 +85,9 @@ export default function AboutMeMobile() {
             style={profileImage === Fursona ? { width: "250px" } : { width: "150px" }}
         />
         
-        <button onClick={changeProfileImage} className="px-2 py-1 mt-4 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-700">
+        {/*<button onClick={changeProfileImage} className="px-2 py-1 mt-4 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-700">
             {profileImage === Profile ? "FURSONA 🐧" : "HUMAN 🧑🏻"}
-        </button>
+        </button>*/}
     </div>
   )}
                                     </div>

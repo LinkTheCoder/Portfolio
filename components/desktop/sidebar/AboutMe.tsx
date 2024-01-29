@@ -67,9 +67,9 @@ export default function Portfolio() {
                   alt={profileImage === Fursona ? "Fursona" : "Profile"}
                 />
                          ) : null}
-                <button onClick={changeProfileImage} className="px-2 py-1 mt-4 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-700">
+                {/*<button onClick={changeProfileImage} className="px-2 py-1 mt-4 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-700">
                   {profileImage === Profile ? "FURSONA 🐧" : "HUMAN 🧑🏻"}
-                </button>
+                </button>*/}
 </div>
 </div>
 
