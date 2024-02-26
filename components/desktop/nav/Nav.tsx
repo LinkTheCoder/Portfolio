@@ -36,6 +36,17 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [noticeBox, setNoticeBox] = useState({ visible: false, message: '' });
 
+  const copyDiscordUsername = () => {
+    const discordUsername = 'linkthedev';
+    navigator.clipboard.writeText(discordUsername)
+      .then(() => {
+        setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
+        setTimeout(() => {
+          setNoticeBox({ visible: false, message: '' });
+        }, 1000);
+      })
+  };
+  
   return (
     <>
       <Bar />
@@ -82,7 +93,7 @@ export default function Navbar({ fixed }) {
               </li>
 
               <li className="nav-item">
-                  <button title="Discord" onClick={() => window.location.href = 'https://discord.gg/YqRJbuc5AZ'}
+                  <button title="Discord" onClick={copyDiscordUsername} 
                     className="px-2 py-2 font-bold text-white rounded bg-slate-800 hover:bg-slate-700"
                   >
                     <Image className="h-auto max-w-full" src={Discord} alt="image description" />
