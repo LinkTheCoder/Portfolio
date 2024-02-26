@@ -71,7 +71,7 @@ export default function AboutMeMobile() {
                                             <li><details><summary>👋 About</summary>Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. <br></br> I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps & bots</a>. <br></br>I enjoy as well to create <a className='text-blue-400 no-underline hover:underline' href='https://store.steampowered.com/developer/LinkTheDev'>PC games</a></details></li>
                                             <li><details><summary>📑 Resume</summary><a className='text-blue-400 no-underline hover:underline' href="https://www.linkedin.com/in/linkthedev/">LinkedIn</a></details></li>
                                             <li><details><summary>📧 Contact</summary><a className='text-blue-400 no-underline hover:underline' href='mailto:linkhaggman@gmail.com'>Email</a>, Discord(@linkthedev)</details></li>
-                                            <li><details><summary>🌍 Languages</summary>Svenska (Native), English (Fluent), <br></br>한국인 (TOPIK-I)</details></li>
+                                            <li><details><summary>🌍 Languages</summary>Svenska (Native), English (Fluent), <br></br>한국어 (TOPIK-I)</details></li>
                                             <li><details><summary>🔖 Hobbies</summary>Mystery novels, Korean Survival & Variety Shows etc</details></li>
                                         </ul>
                                         </div>
