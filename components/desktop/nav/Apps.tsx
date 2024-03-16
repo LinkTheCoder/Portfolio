@@ -9,7 +9,7 @@ import Discord from '../../../public/img/Discord.png';
 import Linkedin from '../../../public/img/Linkedin.png';
 import Nintendo from '../../../public/img/Nintendo.png';
 import Youtube from '../../../public/img/Youtube.png';
-import TikTok from '../../../public/img/TikTok.png';
+import TikTok from '../../../public/img/TikTokIcon.png';
 
 export default function TrashModal() {
     const [showModal, setShowModal] = React.useState(false);
