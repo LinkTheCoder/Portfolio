@@ -8,7 +8,6 @@ import Gmail from '../../../public/img/Gmail.png';
 import Github from '../../../public/img/Github.png';
 import Fullscreen from '../../../public/img/Fullscreen.png';
 import Steam from '../../../public/img/Steam.png';
-import Linkedin from '../../../public/img/Linkedin.png';
 import Discord from '../../../public/img/Discord.png';
 import Apps from './Apps'
 import Settings from './Settings'
@@ -97,12 +96,6 @@ export default function Navbar({ fixed }) {
                     className="px-2 py-2 font-bold text-white rounded bg-slate-800 hover:bg-slate-700"
                   >
                     <Image className="h-auto max-w-full" src={Discord} alt="image description" />
-                  </button>
-              </li>
-
-              <li className="nav-item">
-                  <button title="LinkedIn" onClick={() => window.location.href = 'https://www.linkedin.com/in/linkthedev/'} className="px-2 py-2 font-bold text-white rounded bg-slate-800 hover:bg-slate-700">
-                    <Image className="h-auto max-w-full" src={Linkedin} alt="image description" />
                   </button>
               </li>
 

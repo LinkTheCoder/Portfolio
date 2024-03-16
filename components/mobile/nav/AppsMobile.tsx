@@ -6,7 +6,6 @@ import GitCatIcon from '../../../public/img/GitCatIcon.png';
 import DiscordIcon from '../../../public/img/DiscordIcon.png';
 import NintendoIcon from '../../../public/img/NintendoIcon.png';
 import LIicon from '../../../public/img/LIicon.png';
-import Youtube from '../../../public/img/Youtube.png';
 import TikTok from '../../../public/img/TikTok.png';
 import { CgMenuGridO } from 'react-icons/cg';
 import Image from 'next/image';
@@ -131,17 +130,6 @@ export default function TrashModal() {
       <div className="py-2">
         <p className="text-base text-white">
         Discord
-        </p>
-      </div>
-    </div>
-
-    <div className="overflow-hidden rounded">
-    <a href="https://youtube.com/@LinkTheDev"><button className="px-1 py-1 bg-white rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={Youtube} alt="Youtube"/>
-    </button></a>
-      <div className="py-2">
-        <p className="text-base text-white">
-        Youtube
         </p>
       </div>
     </div>
