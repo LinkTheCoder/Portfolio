@@ -1,6 +1,6 @@
 import React from "react";
 import Folder from '../../../public/img/Folder.png';
-import Matador from '../../../public/img/MatadorThumbnail.png';
+import Kakong from '../../../public/img/KakongThumbnail.png';
 import BeastCrimes from '../../../public/img/BCThumbnail.png';
 import SpaceOutCat from '../../../public/img/SPCThumbnail.png';
 import PortfolioThumbnail from '../../../public/img/PortfolioThumbnail.png';
@@ -46,7 +46,7 @@ export default function Portfolio() {
                   <div className="relative grid flex-auto grid-cols-1 gap-3 p-6 bg-slate-800 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"> 
                   <Projects href="https://github.com/LinkTheCoder/SpaceOutCat" src={SpaceOutCat} title="Space Out Cat" description="A self-care app"/>  
                   <Projects href="https://github.com/LinkTheCoder/BeastCrimes" src={BeastCrimes} title="Beast Crimes" description="Website of my game Beast Crimes"/> 
-                  <Projects href="https://github.com/LinkTheCoder/Matador" src={Matador} title="Matador" description="A re-design of a pizza restaurant"/>
+                  <Projects href="https://github.com/LinkTheCoder/Kakong" src={Kakong} title="Kakong" description="A korean learning app"/>
                   <Projects href="https://github.com/LinkTheCoder/Portfolio" src={PortfolioThumbnail} title="Portfolio" description="My windows themed portfolio"/>  
 
   </div>
