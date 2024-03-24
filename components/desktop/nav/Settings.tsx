@@ -5,7 +5,7 @@ import React from "react";
 import Image from 'next/image';
 import { useTheme } from '../../../context/ThemeContext'; // Adjust the path based on your project structure
 import Wallpaper from '../../../public/img/Wallpaper.jpg';
-import Wallpaper2 from '../../../public/img/Wallpaper2.jpg';
+import Wallpaper2 from '../../../public/img/Wallpaper2.png';
 import Wallpaper3 from '../../../public/img/Wallpaper3.png';
 import Wallpaper4 from '../../../public/img/Wallpaper4.png';
 import SettingsIcon from '../../../public/img/Settings.png';

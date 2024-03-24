@@ -4,9 +4,9 @@ import Gmail from '../../../public/img/Gmail.png';
 import SteamMobileIcon from '../../../public/img/SteamMobileIcon.png';
 import GitCatIcon from '../../../public/img/GitCatIcon.png';
 import DiscordIcon from '../../../public/img/DiscordIcon.png';
-import NintendoIcon from '../../../public/img/NintendoIcon.png';
 import LIicon from '../../../public/img/LIicon.png';
-import TikTok from '../../../public/img/TikTok.png';
+import GooglePlay from '../../../public/img/GooglePlayIcon.png';
+import ChromeWebStore from '../../../public/img/ChromeWebStoreIcon.png';
 import { CgMenuGridO } from 'react-icons/cg';
 import Image from 'next/image';
 
@@ -135,12 +135,23 @@ export default function TrashModal() {
     </div>
 
     <div className="overflow-hidden rounded">
-    <a href="https://tiktok.com/@LinkTheCoder"><button className="px-1 py-1 bg-black rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={TikTok} alt="TikTok"/>
+    <a href="https://play.google.com/store/apps/dev?id=7112699078675054520"><button className="px-1 py-1 bg-white rounded-2xl">
+    <Image className="inline w-12 h-12 rounded-sm object" src={GooglePlay} alt="Google Play"/>
     </button></a>
       <div className="py-2">
         <p className="text-base text-white">
-        TikTok
+        Google Play
+        </p>
+      </div>
+    </div>
+
+    <div className="overflow-hidden rounded">
+    <a href="https://chromewebstore.google.com/detail/shiba-shuffle/ffioeglliagmdkbfnahpacdglmmdecpg"><button className="px-1 py-1 bg-white rounded-2xl">
+    <Image className="inline w-12 h-12 rounded-sm object" src={ChromeWebStore} alt="Chrome Web Store"/>
+    </button></a>
+      <div className="py-2">
+        <p className="text-base text-white">
+        Chrome Web Store
         </p>
       </div>
     </div>
@@ -152,17 +163,6 @@ export default function TrashModal() {
       <div className="py-2">
         <p className="text-base text-white">
         LinkedIn
-        </p>
-      </div>
-    </div>
-
-    <div className="overflow-hidden rounded">
-   <button onClick={copyNintendoUsername} className="px-1 py-1 bg-red-600 rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={NintendoIcon} alt="Discord"/>
-    </button>
-      <div className="py-2">
-        <p className="text-base text-white">
-        Nintendo
         </p>
       </div>
     </div>

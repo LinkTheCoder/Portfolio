@@ -7,23 +7,12 @@ import Windows from '../../../public/img/Windows.png';
 import Github from '../../../public/img/Github.png';
 import Discord from '../../../public/img/Discord.png';
 import Linkedin from '../../../public/img/Linkedin.png';
-import Nintendo from '../../../public/img/Nintendo.png';
-import TikTok from '../../../public/img/TikTokIcon.png';
+import GooglePlay from '../../../public/img/GooglePlayIcon.png';
+import ChromeWebStore from '../../../public/img/ChromeWebStoreIcon.png';
 
 export default function TrashModal() {
     const [showModal, setShowModal] = React.useState(false);
     const [noticeBox, setNoticeBox] = useState({ visible: false, message: '' });
-
-    const copyNintendoUsername = () => {
-      const nintendoUsername = 'SW-0107-3340-5734';
-      navigator.clipboard.writeText(nintendoUsername)
-        .then(() => {
-          setNoticeBox({ visible: true, message: 'Friend Code copied to clipboard' });
-          setTimeout(() => {
-            setNoticeBox({ visible: false, message: '' });
-          }, 1000);
-        })
-    };
 
     const copyDiscordUsername = () => {
       const discordUsername = 'linkthedev';
@@ -108,7 +97,7 @@ export default function TrashModal() {
     <div className="overflow-hidden rounded">
     <a href="https://store.steampowered.com/developer/LinkTheDev"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={Steam} alt="Steam"/>
-      <div className="px-6 py-2">
+      <div className="px-4 py-2">
         <p className="text-base text-slate-400">
         Steam
         </p>
@@ -119,7 +108,7 @@ export default function TrashModal() {
     <div className="overflow-hidden rounded">
 <button onClick={copyDiscordUsername} className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={Discord} alt="Discord"/>
-      <div className="px-6 py-2">
+      <div className="px-4 py-2">
         <p className="text-base text-slate-400">
         Discord
         </p>
@@ -128,11 +117,22 @@ export default function TrashModal() {
     </div>
 
     <div className="overflow-hidden rounded">
-    <a href="https://tiktok.com/@LinkTheCoder"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
-    <Image className="inline w-12 h-12 rounded-sm object" src={TikTok} alt="TikTok"/>
-      <div className="px-6 py-2">
+    <a href="https://play.google.com/store/apps/dev?id=7112699078675054520"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+    <Image className="inline w-12 h-12 rounded-sm object" src={GooglePlay} alt="Google Play"/>
+      <div className="px-2 py-2">
         <p className="text-base text-slate-400">
-        TikTok
+        Google Play
+        </p>
+      </div>
+      </button></a>
+    </div>
+
+    <div className="overflow-hidden rounded">
+    <a href="https://chromewebstore.google.com/detail/shiba-shuffle/ffioeglliagmdkbfnahpacdglmmdecpg"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+    <Image className="inline w-12 h-12 rounded-sm object" src={ChromeWebStore} alt="Chrome web Store"/>
+      <div className="py-2">
+        <p className="text-base text-slate-400">
+        Chrome <br></br>Web Store
         </p>
       </div>
       </button></a>
@@ -141,23 +141,12 @@ export default function TrashModal() {
     <div className="overflow-hidden rounded">
     <a href="https://www.linkedin.com/in/linkthedev/"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={Linkedin} alt="LinkedIn"/>
-      <div className="px-6 py-2">
+      <div className="px-4 py-2">
         <p className="text-base text-slate-400">
         LinkedIn
         </p>
       </div>
       </button></a>
-    </div>
-
-    <div className="overflow-hidden rounded">
-<button onClick={copyNintendoUsername} className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
-    <Image className=" inline w-12 h-12 rounded-sm object" src={Nintendo} alt="Nintendo"/>
-      <div className="px-2 py-2">
-        <p className="text-base text-slate-400">
-        Nintendo
-        </p>
-      </div>
-      </button>
     </div>
 
   </div>
