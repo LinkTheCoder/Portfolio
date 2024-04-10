@@ -57,7 +57,7 @@ export default function Portfolio() {
                           <li>📑 <span className="font-medium">Resume:</span> <a className='text-blue-400 no-underline hover:underline' href="https://www.linkedin.com/in/linkthedev/">LinkedIn</a></li>
                           <li>📧 <span className="font-medium">Contact:</span> <a className='text-blue-400 no-underline hover:underline' href='mailto:linkhaggman@gmail.com'>Email</a>, Discord(@linkthedev)</li>
                           <li>🌍 <span className="font-medium">Languages:</span> Svenska (Native), English (Fluent), 한국어 (TOPIK-I)</li>
-                          <li>🔖 <span className="font-medium">Hobbies:</span> Mystery novels, Korean Survival & Variety Shows etc.</li>
+                          <li>🔖 <span className="font-medium">Hobbies:</span> <a className='text-blue-400 no-underline hover:underline' href='https://www.goodreads.com/linkthedev'>Mystery novels</a>, <a className='text-blue-400 no-underline hover:underline' href='https://mydramalist.com/profile/LinkTheDev'>Korean Shows</a> etc</li>
                         </ul>
                         <div className="flex flex-col items-center">
                               {profileImage !== null ? (
