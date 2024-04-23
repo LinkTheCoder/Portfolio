@@ -6,7 +6,7 @@ import GitCatIcon from '../../../public/img/GitCatIcon.png';
 import DiscordIcon from '../../../public/img/DiscordIcon.png';
 import LIicon from '../../../public/img/LIicon.png';
 import GooglePlay from '../../../public/img/GooglePlayIcon.png';
-import ChromeWebStore from '../../../public/img/ChromeWebStoreIcon.png';
+import Youtube from '../../../public/img/Youtube.png';
 import { CgMenuGridO } from 'react-icons/cg';
 import Image from 'next/image';
 
@@ -146,12 +146,12 @@ export default function TrashModal() {
     </div>
 
     <div className="overflow-hidden rounded">
-    <a href="https://chromewebstore.google.com/detail/shiba-shuffle/ffioeglliagmdkbfnahpacdglmmdecpg"><button className="px-1 py-1 bg-white rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={ChromeWebStore} alt="Chrome Web Store"/>
+    <a href="https://www.youtube.com/@Link_The_Penguin"><button className="px-1 py-1 bg-white rounded-2xl">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Youtube} alt="Chrome Web Store"/>
     </button></a>
       <div className="py-2">
         <p className="text-base text-white">
-        Chrome Web Store
+        YouTube
         </p>
       </div>
     </div>

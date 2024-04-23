@@ -8,7 +8,7 @@ import Github from '../../../public/img/Github.png';
 import Discord from '../../../public/img/Discord.png';
 import Linkedin from '../../../public/img/Linkedin.png';
 import GooglePlay from '../../../public/img/GooglePlayIcon.png';
-import ChromeWebStore from '../../../public/img/ChromeWebStoreIcon.png';
+import Youtube from '../../../public/img/Youtube.png';
 
 export default function TrashModal() {
     const [showModal, setShowModal] = React.useState(false);
@@ -128,11 +128,11 @@ export default function TrashModal() {
     </div>
 
     <div className="overflow-hidden rounded">
-    <a href="https://chromewebstore.google.com/detail/shiba-shuffle/ffioeglliagmdkbfnahpacdglmmdecpg"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
-    <Image className="inline w-12 h-12 rounded-sm object" src={ChromeWebStore} alt="Chrome web Store"/>
-      <div className="py-2">
+    <a href="https://www.youtube.com/@Link_The_Penguin"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Youtube} alt="Chrome web Store"/>
+      <div className="px-2 py-2">
         <p className="text-base text-slate-400">
-        Chrome <br></br>Web Store
+        YouTube
         </p>
       </div>
       </button></a>
