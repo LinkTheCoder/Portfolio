@@ -10,6 +10,7 @@ import Fullscreen from '../../../public/img/Fullscreen.png';
 import Steam from '../../../public/img/Steam.png';
 import Discord from '../../../public/img/Discord.png';
 import Apps from './Apps'
+import Terminal from './Terminal'
 import Settings from './Settings'
 import Image from 'next/image';
 
@@ -67,6 +68,7 @@ export default function Navbar({ fixed }) {
             id="example-navbar-danger"
           >
             <ul className="flex flex-col space-x-2 list-none lg:flex-row lg:ml-auto">
+
               <li className="nav-item">
                   <button title="Chrome" onClick={() => window.location.href = 'https://www.google.com'} className="px-2 py-2 font-bold text-white rounded bg-slate-800 hover:bg-slate-700">
                     <Image className="h-auto max-w-full" src={Chrome} alt="image description" />
@@ -103,6 +105,8 @@ export default function Navbar({ fixed }) {
                 <Settings />
               </li>
 
+              <Terminal />
+            
               <li title="Fullscreen" className="nav-item">
                 <button onClick={FullscreenFunction} className="px-2 py-2 font-bold text-white rounded bg-slate-800 hover:bg-slate-700">
                   <Image className="h-auto max-w-full" src={Fullscreen} alt="image description" />
