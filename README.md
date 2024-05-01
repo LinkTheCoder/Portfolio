@@ -10,3 +10,5 @@
 🖥️ Fullscreen mode available!
 
 🖼️ Change background on PC!
+
+➡️ Terminal tool on PC!
