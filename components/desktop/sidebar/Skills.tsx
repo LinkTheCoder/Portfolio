@@ -41,9 +41,9 @@ export default function Portfolio() {
                 <div className="rounded-b-lg relative flex-auto p-6 bg-slate-800">    
                   <ul className="my-4 space-y-6 text-lg leading-relaxed text-left text-slate-400">
                 <li>🖥️  <span className="font-medium ">Languages:</span> HTML, CSS, JS, JSX, TS, TSX, NANI, MARKDOWN</li>
-                <li>⚙️ <span className="font-medium ">Frameworks:</span> REACT, TAILWIND CSS</li>
+                <li>⚙️ <span className="font-medium ">Frameworks:</span> REACT, NEXT, TAILWIND CSS</li>
                 <li>📱 <span className="font-medium ">Apps:</span> PWA, TWA, WINDOWS</li>
-                <li>📦 <span className="font-medium ">Testing:</span> JEST, RTL, CYPRESS</li>
+                <li>📦 <span className="font-medium ">Testing:</span> JEST, RTL, PLAYWRIGHT</li>
                 <li>🛠️ <span className="font-medium ">Softwares:</span> UNITY, FIGMA, CLIP STUDIO PAINT</li>
                 <li>🤖 <span className="font-medium ">AI:</span> CHAT GPT, GITHUB COPILOT</li>
             </ul>
