@@ -1,4 +1,3 @@
-// Hero.tsx
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useTheme } from '../../context/ThemeContext'; // Adjust the path based on your project structure
@@ -18,6 +17,7 @@ const Hero = () => {
   }, []);
 
   const defaultWallpaper = isAndroid ? SamsungWallpaper : Wallpaper;
+  const mobileWallpaper = isAndroid ? SamsungWallpaper : null;
 
   const handleImageLoad = () => {
     if (!imageLoaded) {
@@ -38,7 +38,7 @@ const Hero = () => {
         ) : (
           <Image
             className='object-cover w-full h-full'
-            src={defaultWallpaper}
+            src={isAndroid ? mobileWallpaper : defaultWallpaper}
             alt="Default Wallpaper"
             onLoad={handleImageLoad}
           />
