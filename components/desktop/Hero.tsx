@@ -1,4 +1,3 @@
-// Hero.tsx
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useTheme } from '../../context/ThemeContext'; // Adjust the path based on your project structure
@@ -14,40 +13,32 @@ const Hero = () => {
 
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
-    setIsAndroid(
-      userAgent.includes('android') ||
-      userAgent.includes('iphone') ||
-      userAgent.includes('ipad')
-    );
+    setIsAndroid(userAgent.includes('android') || userAgent.includes('iphone') || userAgent.includes('ipad'));
   }, []);
 
   const defaultWallpaper = isAndroid ? SamsungWallpaper : Wallpaper;
 
   const handleImageLoad = () => {
-    setImageLoaded(true);
+    if (!imageLoaded) {
+      setImageLoaded(true);
+    }
   };
 
   return (
     <div className='relative w-full h-screen overflow-hidden'>
-      {/* Initial black background */}
-      <div
-        className={`absolute inset-0 transition-opacity duration-500 ${
-          imageLoaded ? 'opacity-0' : 'opacity-100'
-        } bg-black`}
-      ></div>
-
-      {/* Wallpaper image */}
+      <div className="absolute w-full h-full bg-black"></div> {/* Initial black background */}
       <div className="relative w-full h-full">
+        {!imageLoaded && (
+          <div className='absolute w-full h-full bg-black'></div> // Black background before image loads
+        )}
         <Image
-          className='object-cover w-full h-full'
+          className='object-cover w-full h-full transition-opacity duration-500'
           src={selectedWallpaper || defaultWallpaper}
           alt="Wallpaper"
           onLoad={handleImageLoad}
-          priority={true} // Ensures the image loads as soon as possible
+          style={{ opacity: imageLoaded ? 1 : 0 }}
         />
       </div>
-
-      {/* Overlay content */}
       <div className='absolute bottom-0 z-10 w-full'>
         {isAndroid ? (
           imageLoaded && <NavMobile fixed={undefined} />
