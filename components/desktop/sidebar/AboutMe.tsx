@@ -62,7 +62,7 @@ export default function Portfolio() {
                         <div className="flex flex-col items-center">
                               {profileImage !== null ? (
                         <Image
-                  className="inline object-cover h-full ml-2 rounded w-48"
+                  className="inline object-cover h-full ml-2 rounded w-32"
                   src={profileImage}
                   alt={profileImage === Fursona ? "Fursona" : "Profile"}
                 />
