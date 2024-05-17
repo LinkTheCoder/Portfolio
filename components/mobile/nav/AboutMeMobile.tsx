@@ -82,7 +82,7 @@ export default function AboutMeMobile() {
             className="object-cover rounded"
             src={profileImage}
             alt={profileImage === Fursona ? "Fursona" : "Profile"}
-            style={profileImage === Fursona ? { width: "200px" } : { width: "150px" }}
+            style={profileImage === Fursona ? { width: "150px" } : { width: "150px" }}
         />
         
         {/*<button onClick={changeProfileImage} className="px-2 py-1 mt-4 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-700">
