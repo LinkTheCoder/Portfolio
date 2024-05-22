@@ -54,7 +54,7 @@ export default function SKillsMobile() {
                   <ul className="mt-4 mb-2 space-y-6 text-lg leading-relaxed text-left text-slate-400">
 
 <li><details><summary>🖥️ Code Languages</summary>HTML, CSS, JS, JSX, TS, TSX, NANI, MARKDOWN</details></li>
-<li><details><summary>⚙️ Frameworks</summary>REACT, NEXT, TAILWIND CSS</details></li>
+<li><details><summary>⚙️ Frameworks</summary>REACT, NEXT, REACT NATIVE, TAILWIND CSS</details></li>
 <li><details><summary>📱 Apps</summary>PWA, TWA, WINDOWS</details></li>
 <li><details><summary>📦 Testing</summary>JEST, RTL, PLAYWRIGHT</details></li>
 <li><details><summary>🛠️ Softwares</summary>UNITY, FIGMA, CLIP STUDIO PAINT</details></li>
