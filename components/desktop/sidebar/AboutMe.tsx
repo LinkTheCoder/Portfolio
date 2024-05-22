@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Folder from '../../../public/img/Folder.png';
 import Profile from '../../../public/img/Profile2.png';
+import ProfileIcon from '../../../public/img/Profile3.jpg';
 import Fursona from '../../../public/img/Fursona.png';
 import Image from 'next/image';
 
@@ -50,7 +51,15 @@ export default function Portfolio() {
                       </button>
                     </div>
                     {/* body */}
+                          
                     <div className="rounded-b-lg relative flex-auto p-6 bg-slate-800">
+                    <div className="flex flex-col items-center">
+                    <Image
+                            className="inline object-cover h-28 w-28 rounded-full mb-4"
+                            src={ProfileIcon}
+                            alt="ProfileIcon"
+                          />
+                          </div>
                       <div className="flex items-center">
                         <ul className="flex-1 my-4 space-y-6 text-lg leading-relaxed text-left text-slate-400">
                           <li>👋 Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps & bots</a>. I enjoy as well to create <a className='text-blue-400 no-underline hover:underline' href='https://store.steampowered.com/developer/LinkTheDev'>PC games</a>.</li>
@@ -60,7 +69,10 @@ export default function Portfolio() {
                           <li>🔖 <span className="font-medium">Hobbies:</span> <a className='text-blue-400 no-underline hover:underline' href='https://www.goodreads.com/linkthedev'>Mystery novels</a>, <a className='text-blue-400 no-underline hover:underline' href='https://mydramalist.com/profile/LinkTheDev'>Korean Shows</a> etc</li>
                         </ul>
                         <div className="flex flex-col items-center">
-                              {profileImage !== null ? (
+                             
+                             {/* ALTERNATIVE PROFILE IMAGES */}
+
+                              {/* {profileImage !== null ? (
                         <Image
                   className="inline object-cover h-full ml-2 rounded w-32"
                   src={profileImage}

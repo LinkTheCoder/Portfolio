@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import AvatarIcon from '../../../public/img/AvatarIcon.png';
+import ProfileIcon from '../../../public/img/Profile3.jpg';
 import Profile from '../../../public/img/Profile2.png';
 import Fursona from '../../../public/img/Fursona.png';
 import Image from 'next/image';
@@ -66,6 +67,11 @@ export default function AboutMeMobile() {
                             <div className="relative flex flex-col w-full border-0 rounded-lg shadow-lg outline-none focus:outline-none">
                                 {/*body*/}
                                 <div className="relative flex-auto p-6 bg-slate-800">
+                                <Image
+                            className="inline object-cover h-28 w-28 rounded-full mb-4"
+                            src={ProfileIcon}
+                            alt="ProfileIcon"
+                          />
                                     <div className="flex">
                                         <ul className="mb-2 flex-auto space-y-4 text-lg leading-relaxed text-left text-slate-400">
                                             <li><details><summary>👋 About</summary>Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. <br></br> I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps & bots</a>. <br></br>I enjoy as well to create <a className='text-blue-400 no-underline hover:underline' href='https://store.steampowered.com/developer/LinkTheDev'>PC games</a></details></li>
@@ -78,14 +84,14 @@ export default function AboutMeMobile() {
                                         
                                         {profileImage !== null && (
     <div className="flex flex-col items-center ml-4">
-        <Image
+        {/*<Image
             className="object-cover rounded"
             src={profileImage}
             alt={profileImage === Fursona ? "Fursona" : "Profile"}
             style={profileImage === Fursona ? { width: "150px" } : { width: "150px" }}
         />
         
-        {/*<button onClick={changeProfileImage} className="px-2 py-1 mt-4 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-700">
+        <button onClick={changeProfileImage} className="px-2 py-1 mt-4 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-700">
             {profileImage === Profile ? "FURSONA 🐧" : "HUMAN 🧑🏻"}
         </button>*/}
     </div>
