@@ -54,7 +54,7 @@ export default function TrashModal() {
  
     <div className="rounded overflow-hidden">
     <Image className="inline object w-15 h-20 rounded-sm" src={VsCodeIcon} alt="Profile image"/>
-      <div className="px-6 py-2">
+      <div className="px-1 py-2">
         <p className="text-slate-400 text-base">
         NotFinal
         </p>
@@ -62,8 +62,8 @@ export default function TrashModal() {
     </div>
 
     <div className="rounded overflow-hidden">
-    <Image className="inline object w-20 h-20 rounded-sm" src={JSXIcon} alt="Profile image"/>
-      <div className="px-6 py-2">
+    <Image className="inline object w-20 h-20 rounded-sm ml-4" src={JSXIcon} alt="Profile image"/>
+      <div className="px-2 py-2">
         <p className="text-slate-400 text-base">
         NoFunction
         </p>
