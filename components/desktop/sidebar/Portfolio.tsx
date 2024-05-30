@@ -47,7 +47,7 @@ export default function Portfolio() {
                   <Projects href="https://github.com/LinkTheCoder/SpaceOutCat" src={SpaceOutCat} title="Space Out Cat" description="A self-care app"/>  
                   <Projects href="https://github.com/LinkTheCoder/BeastCrimes" src={BeastCrimes} title="Beast Crimes" description="Website of my game Beast Crimes"/> 
                   <Projects href="https://github.com/LinkTheCoder/Kakong" src={Kakong} title="Kakong" description="A korean learning app"/>
-                  <Projects href="https://github.com/LinkTheCoder/Portfolio" src={PortfolioThumbnail} title="Portfolio" description="My windows themed portfolio"/>  
+                  <Projects href="https://github.com/LinkTheCoder/Portfolio" src={PortfolioThumbnail} title="Portfolio" description="My windows/android themed portfolio"/>  
 
   </div>
   <div className="rounded-b-lg relative grid flex-auto grid-cols-1 pb-6 pl-6 pr-6 bg-slate-800 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1">

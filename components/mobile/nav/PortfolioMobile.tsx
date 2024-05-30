@@ -58,7 +58,7 @@ export default function PortfolioMobile() {
                   <div className="relative grid flex-auto grid-cols-1 gap-3 p-6 bg-slate-800/90 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
                   <ProjectsMobile href="https://github.com/LinkTheCoder/SpaceOutCat" src={SpaceOutCat} title="Space Out Cat" description="A self-care app"/>
                   <ProjectsMobile href="https://github.com/LinkTheCoder/BeastCrimes" src={BeastCrimes} title="Beast Crimes" description="Website of my game Beast Crimes"/> 
-                  <ProjectsMobile href="https://github.com/LinkTheCoder/Portfolio" src={PortfolioThumbnail} title="Portfolio" description="My windows themed portfolio"/>
+                  <ProjectsMobile href="https://github.com/LinkTheCoder/Portfolio" src={PortfolioThumbnail} title="Portfolio" description="My windows/android themed portfolio"/>
 
                   </div>
   <div className="relative grid flex-auto grid-cols-1 pb-6 pl-6 pr-6 bg-slate-800/90 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1">
