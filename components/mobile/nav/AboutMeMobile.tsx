@@ -3,25 +3,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import AvatarIcon from '../../../public/img/AvatarIcon.png';
 import ProfileIcon from '../../../public/img/Profile3.jpg';
-import Profile from '../../../public/img/Profile2.png';
-import Fursona from '../../../public/img/Fursona.png';
 import Image from 'next/image';
 
 export default function AboutMeMobile() {
     const [showModal, setShowModal] = useState(false);
-    const [profileImage, setProfileImage] = useState(Profile);
-
-    const changeProfileImage = (event) => {
-        event.stopPropagation();
-        setProfileImage(null);
-        setTimeout(() => {
-            if (profileImage === Profile) {
-                setProfileImage(Fursona);
-            } else {
-                setProfileImage(Profile);
-            }
-        }, 200);
-    };
 
     const modalRef = useRef(null);
 
@@ -81,21 +66,6 @@ export default function AboutMeMobile() {
                                             <li><details><summary>🔖 Hobbies</summary>Mystery novels, Korean TV Shows etc</details></li>
                                         </ul>
                                         </div>
-                                        
-                                        {profileImage !== null && (
-    <div className="flex flex-col items-center ml-4">
-        {/*<Image
-            className="object-cover rounded"
-            src={profileImage}
-            alt={profileImage === Fursona ? "Fursona" : "Profile"}
-            style={profileImage === Fursona ? { width: "150px" } : { width: "150px" }}
-        />
-        
-        <button onClick={changeProfileImage} className="px-2 py-1 mt-4 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-700">
-            {profileImage === Profile ? "FURSONA 🐧" : "HUMAN 🧑🏻"}
-        </button>*/}
-    </div>
-  )}
                                     </div>
                                 </div>
                             </div>

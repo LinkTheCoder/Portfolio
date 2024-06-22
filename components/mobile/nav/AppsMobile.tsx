@@ -5,7 +5,7 @@ import SteamMobileIcon from '../../../public/img/SteamMobileIcon.png';
 import GitCatIcon from '../../../public/img/GitCatIcon.png';
 import DiscordIcon from '../../../public/img/DiscordIcon.png';
 import MessengerIcon from '../../../public/img/Messenger.png';
-import LIicon from '../../../public/img/LIicon.png';
+import FurrCard from '../../../public/img/FurrCard.png';
 import GooglePlay from '../../../public/img/GooglePlayIcon.png';
 import Youtube from '../../../public/img/Youtube.png';
 import { CgMenuGridO } from 'react-icons/cg';
@@ -180,12 +180,12 @@ export default function TrashModal() {
     </div>
 
     <div className="overflow-hidden rounded">
-    <a href="https://www.linkedin.com/in/linkthedev/"><button className="px-1 py-1 bg-sky-600 rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={LIicon} alt="LinkedIn"/>
+    <a href="https://linkthepenguin.furrcard.com/"><button className="px-1 py-1 bg-white rounded-2xl">
+    <Image className="inline w-12 h-12 rounded-sm object" src={FurrCard} alt="FurrCard"/>
     </button></a>
       <div className="py-2">
         <p className="text-base text-white">
-        LinkedIn
+        FurrCard
         </p>
       </div>
     </div>

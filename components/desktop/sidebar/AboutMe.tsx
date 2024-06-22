@@ -2,25 +2,12 @@
 
 import React, { useState } from "react";
 import Folder from '../../../public/img/Folder.png';
-import Profile from '../../../public/img/Profile2.png';
 import ProfileIcon from '../../../public/img/Profile3.jpg';
-import Fursona from '../../../public/img/Fursona.png';
 import Image from 'next/image';
 
 export default function Portfolio() {
   const [showModal, setShowModal] = useState(false);
-  const [profileImage, setProfileImage] = useState(Profile); // Initialize with the default profile image
 
-  const changeProfileImage = () => {
-    setProfileImage(null);
-    setTimeout(() => {
-      if (profileImage === Profile) {
-        setProfileImage(Fursona);
-      } else {
-        setProfileImage(Profile);
-      }
-    }, 200);
-  };
   return (
     <ul>
       {/* ABOUT ME */}
@@ -68,21 +55,6 @@ export default function Portfolio() {
                           <li>🌍 <span className="font-medium">Languages:</span> Svenska (Native), English (Fluent), 한국어 (TOPIK-I)</li>
                           <li>🔖 <span className="font-medium">Hobbies:</span> Mystery novels, Korean TV Shows etc</li>
                         </ul>
-                        <div className="flex flex-col items-center">
-                             
-                             {/* ALTERNATIVE PROFILE IMAGES */}
-
-                              {/* {profileImage !== null ? (
-                        <Image
-                  className="inline object-cover h-full ml-2 rounded w-32"
-                  src={profileImage}
-                  alt={profileImage === Fursona ? "Fursona" : "Profile"}
-                />
-                         ) : null}
-                {/*<button onClick={changeProfileImage} className="px-2 py-1 mt-4 text-sm font-medium text-white bg-blue-500 rounded hover:bg-blue-700">
-                  {profileImage === Profile ? "FURSONA 🐧" : "HUMAN 🧑🏻"}
-                </button>*/}
-</div>
 </div>
 
                     </div>

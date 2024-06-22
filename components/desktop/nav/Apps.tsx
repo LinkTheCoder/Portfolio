@@ -6,7 +6,7 @@ import Steam from '../../../public/img/Steam.png';
 import Windows from '../../../public/img/Windows.png';
 import Github from '../../../public/img/Github.png';
 import Discord from '../../../public/img/Discord.png';
-import Linkedin from '../../../public/img/Linkedin.png';
+import FurrCard from '../../../public/img/FurrCard.png';
 import GooglePlay from '../../../public/img/GooglePlayIcon.png';
 import Youtube from '../../../public/img/Youtube.png';
 import Messenger from '../../../public/img/Messenger.png';
@@ -162,16 +162,16 @@ export default function TrashModal() {
     </div>
 
     <div className="overflow-hidden rounded">
-    <a href="https://www.linkedin.com/in/linkthedev/"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
-    <Image className="inline w-12 h-12 rounded-sm object" src={Linkedin} alt="LinkedIn"/>
+    <a href="https://linkthepenguin.furrcard.com/"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+    <Image className="inline w-12 h-12 rounded-sm object" src={FurrCard} alt="FurrCard"/>
       <div className="px-4 py-2">
         <p className="text-base text-slate-400">
-        LinkedIn
+        FurrCard
         </p>
       </div>
       </button></a>
     </div>
-
+    
   </div>
   </div>
   </div>
