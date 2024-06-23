@@ -4,7 +4,6 @@ import Gmail from '../../../public/img/Gmail.png';
 import SteamMobileIcon from '../../../public/img/SteamMobileIcon.png';
 import GitCatIcon from '../../../public/img/GitCatIcon.png';
 import DiscordIcon from '../../../public/img/DiscordIcon.png';
-import MessengerIcon from '../../../public/img/Messenger.png';
 import FurrCard from '../../../public/img/FurrCard.png';
 import GooglePlay from '../../../public/img/GooglePlayIcon.png';
 import Youtube from '../../../public/img/Youtube.png';
@@ -31,17 +30,6 @@ export default function TrashModal() {
     const copyDiscordUsername = () => {
       const discordUsername = 'linkthedev';
       navigator.clipboard.writeText(discordUsername)
-        .then(() => {
-          setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
-          setTimeout(() => {
-            setNoticeBox({ visible: false, message: '' });
-          }, 1000);
-        })
-    };
-
-    const copyMessengerUsername = () => {
-      const messengerUsername = 'Link Häggman';
-      navigator.clipboard.writeText(messengerUsername)
         .then(() => {
           setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
           setTimeout(() => {
@@ -142,17 +130,6 @@ export default function TrashModal() {
       <div className="py-2">
         <p className="text-base text-white">
         Discord
-        </p>
-      </div>
-    </div>
-
-    <div className="overflow-hidden rounded">
-   <button onClick={copyMessengerUsername} className="px-1 py-1 bg-white rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={MessengerIcon} alt="Messenger"/>
-    </button>
-      <div className="py-2">
-        <p className="text-base text-white">
-        Messenger
         </p>
       </div>
     </div>

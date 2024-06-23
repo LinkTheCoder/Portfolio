@@ -9,7 +9,6 @@ import Discord from '../../../public/img/Discord.png';
 import FurrCard from '../../../public/img/FurrCard.png';
 import GooglePlay from '../../../public/img/GooglePlayIcon.png';
 import Youtube from '../../../public/img/Youtube.png';
-import Messenger from '../../../public/img/Messenger.png';
 
 export default function TrashModal() {
     const [showModal, setShowModal] = React.useState(false);
@@ -18,17 +17,6 @@ export default function TrashModal() {
     const copyDiscordUsername = () => {
       const discordUsername = 'linkthedev';
       navigator.clipboard.writeText(discordUsername)
-        .then(() => {
-          setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
-          setTimeout(() => {
-            setNoticeBox({ visible: false, message: '' });
-          }, 1000);
-        })
-    };
-
-    const copyMessengerUsername = () => {
-      const messengerUsername = 'Link Häggman';
-      navigator.clipboard.writeText(messengerUsername)
         .then(() => {
           setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
           setTimeout(() => {
@@ -123,17 +111,6 @@ export default function TrashModal() {
       <div className="px-4 py-2">
         <p className="text-base text-slate-400">
         Discord
-        </p>
-      </div>
-      </button>
-    </div>
-
-    <div className="overflow-hidden rounded">
-<button onClick={copyMessengerUsername} className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
-    <Image className="inline w-12 h-12 rounded-sm object" src={Messenger} alt="Messenger"/>
-      <div className="px-4 py-2">
-        <p className="text-base text-slate-400">
-        Messenger
         </p>
       </div>
       </button>
