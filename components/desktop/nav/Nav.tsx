@@ -88,7 +88,7 @@ export default function Navbar({ fixed }) {
               </li>
 
               <li className="nav-item">
-                  <button title="Steam" onClick={() => window.location.href = 'https://store.steampowered.com/developer/LinkTheDev'} className="px-2 py-2 font-bold text-white rounded bg-slate-800 hover:bg-slate-700">
+                  <button title="Steam" onClick={() => window.location.href = 'https://store.steampowered.com/developer/Link_The_Dev'} className="px-2 py-2 font-bold text-white rounded bg-slate-800 hover:bg-slate-700">
                     <Image className="h-auto max-w-full" src={Steam} alt="image description" />
                   </button>
               </li>
