@@ -7,6 +7,7 @@ import DiscordIcon from '../../../public/img/DiscordIcon.png';
 import FurrCard from '../../../public/img/FurrCard.png';
 import GooglePlay from '../../../public/img/GooglePlayIcon.png';
 import Youtube from '../../../public/img/Youtube.png';
+import VRchat from '../../../public/img/VRchat.png';
 import { CgMenuGridO } from 'react-icons/cg';
 import Image from 'next/image';
 
@@ -163,6 +164,17 @@ export default function TrashModal() {
       <div className="py-2">
         <p className="text-base text-white">
         FurrCard
+        </p>
+      </div>
+    </div>
+
+    <div className="overflow-hidden rounded">
+    <a href="https://vrchat.com/home/user/usr_af1795ea-1e3f-4f24-9337-51676e6a8474"><button className="px-1 py-1 bg-blue-800 rounded-2xl">
+    <Image className="inline w-12 h-12 rounded-sm object" src={VRchat} alt="VRChat"/>
+    </button></a>
+      <div className="py-2">
+        <p className="text-base text-white">
+        VRChat
         </p>
       </div>
     </div>
