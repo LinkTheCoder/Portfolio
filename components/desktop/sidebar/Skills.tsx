@@ -43,7 +43,7 @@ export default function Portfolio() {
                 <li>🖥️  <span className="font-medium ">Languages:</span> HTML, CSS, JS, JSX, TS, TSX, NANI, MARKDOWN</li>
                 <li>⚙️ <span className="font-medium ">Frameworks:</span> REACT, NEXT, REACT NATIVE, TAILWIND CSS</li>
                 <li>📱 <span className="font-medium ">Apps:</span> PWA, TWA, WINDOWS</li>
-                <li>📦 <span className="font-medium ">Testing:</span> JEST, RTL, PLAYWRIGHT</li>
+                <li>📦 <span className="font-medium ">Testing:</span> VITEST, RTL, PLAYWRIGHT</li>
                 <li>🛠️ <span className="font-medium ">Softwares:</span> UNITY, FIGMA, CLIP STUDIO PAINT, VSCODE</li>
             </ul>
                 </div>
