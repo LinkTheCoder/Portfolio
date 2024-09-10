@@ -52,11 +52,9 @@ export default function Portfolio() {
                           <li>👋 Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps & bots</a>. I enjoy as well to create <a className='text-blue-400 no-underline hover:underline' href='https://store.steampowered.com/developer/LinkTheDev'>PC games</a>.</li>
                           <li>📑 <span className="font-medium">Resume:</span> <a className='text-blue-400 no-underline hover:underline' href="https://www.linkedin.com/in/linkthedev/">LinkedIn</a></li>
                           <li>📧 <span className="font-medium">Contact:</span> <a className='text-blue-400 no-underline hover:underline' href='mailto:linkhaggman@gmail.com'>Email</a>, Discord(@linkthedev), VRChat(@LinkTheDev)</li>
-                          <li>🌍 <span className="font-medium">Languages:</span> Svenska (Native), English (Fluent), 한국어 (TOPIK-I)</li>
                           <li>🔖 <span className="font-medium">Hobbies:</span> Mystery novels, Korean TV Shows etc</li>
                         </ul>
 </div>
-
                     </div>
                   </div>
                 </div>
