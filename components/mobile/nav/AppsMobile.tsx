@@ -158,17 +158,6 @@ export default function TrashModal() {
     </div>
 
     <div className="overflow-hidden rounded">
-    <a href="https://linkthepenguin.furrcard.com/"><button className="px-1 py-1 bg-white rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={FurrCard} alt="FurrCard"/>
-    </button></a>
-      <div className="py-2">
-        <p className="text-base text-white">
-        FurrCard
-        </p>
-      </div>
-    </div>
-
-    <div className="overflow-hidden rounded">
     <a href="https://vrchat.com/home/user/usr_af1795ea-1e3f-4f24-9337-51676e6a8474"><button className="px-1 py-1 bg-blue-800 rounded-2xl">
     <Image className="inline w-12 h-12 rounded-sm object" src={VRchat} alt="VRChat"/>
     </button></a>
