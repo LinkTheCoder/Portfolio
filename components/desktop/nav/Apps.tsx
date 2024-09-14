@@ -96,7 +96,7 @@ export default function TrashModal() {
       </div>
 
     <div className="overflow-hidden rounded">
-    <a href="https://store.steampowered.com/developer/LinkTheDev"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+    <a href="https://store.steampowered.com/developer/Link_The_Dev"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={Steam} alt="Steam"/>
       <div className="px-4 py-2">
         <p className="text-base text-slate-400">
