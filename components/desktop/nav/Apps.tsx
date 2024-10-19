@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Chrome from '../../../public/img/Chrome.png';
-import Gmail from '../../../public/img/Gmail.png';
 import Steam from '../../../public/img/Steam.png';
 import Windows from '../../../public/img/Windows.png';
 import Github from '../../../public/img/Github.png';
 import Discord from '../../../public/img/Discord.png';
-import FurrCard from '../../../public/img/FurrCard.png';
 import GooglePlay from '../../../public/img/GooglePlayIcon.png';
 import Youtube from '../../../public/img/Youtube.png';
 import VRchat from '../../../public/img/VRchat.png';

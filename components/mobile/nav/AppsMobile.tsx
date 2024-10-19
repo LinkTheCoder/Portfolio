@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import Chrome from '../../../public/img/Chrome.png';
-import Gmail from '../../../public/img/Gmail.png';
 import SteamMobileIcon from '../../../public/img/SteamMobileIcon.png';
 import GitCatIcon from '../../../public/img/GitCatIcon.png';
 import DiscordIcon from '../../../public/img/DiscordIcon.png';
-import FurrCard from '../../../public/img/FurrCard.png';
 import GooglePlay from '../../../public/img/GooglePlayIcon.png';
 import Youtube from '../../../public/img/Youtube.png';
 import VRchat from '../../../public/img/VRchat.png';
@@ -17,17 +15,6 @@ export default function TrashModal() {
 
     const [noticeBox, setNoticeBox] = useState({ visible: false, message: '' });
 
-    const copyNintendoUsername = () => {
-      const nintendoUsername = 'SW-0107-3340-5734';
-      navigator.clipboard.writeText(nintendoUsername)
-        .then(() => {
-          setNoticeBox({ visible: true, message: 'Friend Code copied to clipboard' });
-          setTimeout(() => {
-            setNoticeBox({ visible: false, message: '' });
-          }, 1000);
-        })
-    };
-  
     const copyDiscordUsername = () => {
       const discordUsername = 'linkthedev';
       navigator.clipboard.writeText(discordUsername)
@@ -87,17 +74,6 @@ export default function TrashModal() {
       <div className="py-2">
         <p className="text-base text-white">
         Chrome
-        </p>
-      </div>
-    </div>
- 
-    <div className="overflow-hidden rounded">
-    <a href="mailto:linkhaggman@gmail.com"><button className="px-1 py-1 bg-white rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={Gmail} alt="Gmail"/>
-      </button></a>
-      <div className="py-2">
-        <p className="text-base text-white">
-        Gmail
         </p>
       </div>
     </div>
