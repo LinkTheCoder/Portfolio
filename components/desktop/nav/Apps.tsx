@@ -72,17 +72,6 @@ export default function TrashModal() {
       </div>
       </button></a>
     </div>
- 
-    <div className="overflow-hidden rounded">
-    <a href="mailto:linkhaggman@gmail.com"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
-    <Image className="inline w-12 h-12 rounded-sm object" src={Gmail} alt="Gmail"/>
-      <div className="px-6 py-2">
-        <p className="text-base text-slate-400">
-        Gmail
-        </p>
-      </div>
-      </button></a>
-    </div>
 
     <div className="overflow-hidden rounded">
     <a href="https://github.com/LinkTheCoder"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
