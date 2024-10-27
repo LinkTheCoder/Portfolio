@@ -51,7 +51,7 @@ export default function Portfolio() {
                         <ul className="flex-1 my-4 space-y-6 text-lg leading-relaxed text-left text-slate-400">
                           <li>👋 Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps & bots</a>. I enjoy as well to create <a className='text-blue-400 no-underline hover:underline' href='https://store.steampowered.com/developer/LinkTheDev'>PC games</a>.</li>
                           <li>📑 <span className="font-medium">Resume:</span> <a className='text-blue-400 no-underline hover:underline' href="https://www.linkedin.com/in/linkthedev/">LinkedIn</a></li>
-                          <li>📧 <span className="font-medium">Contact:</span> <a className='text-blue-400 no-underline hover:underline' href='https://www.linkedin.com/in/linkthedev/'>LinkedIn</a>, Discord(@linkthedev)</li>
+                          <li>📧 <span className="font-medium">Contact:</span> <a className='text-blue-400 no-underline hover:underline' href='https://www.linkedin.com/in/linkthedev/'>LinkedIn</a>, Discord(@linkthedev), <a className='text-blue-400 no-underline hover:underline' href='https://vrchat.com/home/user/usr_af1795ea-1e3f-4f24-9337-51676e6a8474'>VRChat</a></li>
                           <li>🔖 <span className="font-medium">Hobbies:</span> Mystery novels, Drawing etc</li>
                         </ul>
 </div>
