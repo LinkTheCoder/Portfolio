@@ -42,15 +42,6 @@ export default function TrashModal() {
                   </div>
                   {/*body*/}
                   <div className="rounded-b-lg bg-slate-800 p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-
-    <div className="rounded overflow-hidden">
-    <Image className="inline object w-20 h-20 rounded-sm" src={Box} alt="Profile image"/>
-      <div className="px-6 py-2">
-        <p className="text-slate-400 text-base">
-        ???
-        </p>
-      </div>
-    </div>
  
     <div className="rounded overflow-hidden">
     <Image className="inline object w-15 h-20 rounded-sm" src={VsCodeIcon} alt="Profile image"/>
