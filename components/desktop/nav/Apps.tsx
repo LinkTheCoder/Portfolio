@@ -115,7 +115,7 @@ export default function TrashModal() {
       </button></a>
     </div>
 
-    <div className="overflow-hidden rounded">
+    {/*<div className="overflow-hidden rounded">
     <a href="https://www.youtube.com/@Link_The_Penguin"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={Youtube} alt="Chrome web Store"/>
       <div className="px-2 py-2">
@@ -124,7 +124,7 @@ export default function TrashModal() {
         </p>
       </div>
       </button></a>
-    </div>
+    </div>*/}
 
     {/*<div className="overflow-hidden rounded">
     <a href="https://vrchat.com/home/user/usr_af1795ea-1e3f-4f24-9337-51676e6a8474"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
