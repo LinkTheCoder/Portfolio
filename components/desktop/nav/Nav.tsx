@@ -86,13 +86,13 @@ export default function Navbar({ fixed }) {
                   </button>
               </li>
 
-              <li className="nav-item">
+            {/*<li className="nav-item">
                   <button title="Discord" onClick={copyDiscordUsername} 
                     className="px-2 py-2 font-bold text-white rounded bg-slate-800 hover:bg-slate-700"
                   >
                     <Image className="h-auto max-w-full" src={Discord} alt="image description" />
                   </button>
-              </li>
+              </li>*/}
 
               <li title="Settings" className="nav-item">
                 <Settings />
