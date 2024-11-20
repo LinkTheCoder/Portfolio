@@ -61,8 +61,8 @@ export default function AboutMeMobile() {
                                         <ul className="mb-2 flex-auto space-y-4 text-lg leading-relaxed text-left text-slate-400">
                                             <li><details><summary>👋 About</summary>Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. <br></br> I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps & bots</a>. <br></br>I enjoy as well to create <a className='text-blue-400 no-underline hover:underline' href='https://store.steampowered.com/developer/LinkTheDev'>PC games</a></details></li>
                                             <li><details><summary>📑 Resume</summary><a className='text-blue-400 no-underline hover:underline' href="https://www.linkedin.com/in/linkthedev/">LinkedIn</a></details></li>
-                                            <li><details><summary>📧 Contact</summary><a className='text-blue-400 no-underline hover:underline' href='https://www.linkedin.com/in/linkthedev/'>LinkedIn</a>, Discord(@linkthedev), <a className='text-blue-400 no-underline hover:underline' href='https://vrchat.com/home/user/usr_af1795ea-1e3f-4f24-9337-51676e6a8474'>VRChat</a></details></li>
-                                            <li><details><summary>🔖 Hobbies</summary>Mystery novels, Drawing etc</details></li>
+                                            <li><details><summary>📧 Contact</summary><a className='text-blue-400 no-underline hover:underline' href='https://www.linkedin.com/in/linkthedev/'>LinkedIn</a></details></li>
+                                            <li><details><summary>🔖 Hobbies</summary>Mystery novels, Drawing, VR, Gaming etc</details></li>
                                         </ul>
                                         </div>
                                     </div>

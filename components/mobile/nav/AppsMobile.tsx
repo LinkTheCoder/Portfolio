@@ -100,7 +100,7 @@ export default function TrashModal() {
       </div>
     </div>
 
-    <div className="overflow-hidden rounded">
+    {/* <div className="overflow-hidden rounded">
    <button onClick={copyDiscordUsername} className="px-1 py-1 bg-indigo-500 rounded-2xl">
     <Image className="inline w-12 h-12 rounded-sm object" src={DiscordIcon} alt="Discord"/>
     </button>
@@ -109,7 +109,7 @@ export default function TrashModal() {
         Discord
         </p>
       </div>
-    </div>
+    </div>*/}
 
     <div className="overflow-hidden rounded">
     <a href="https://play.google.com/store/apps/dev?id=7112699078675054520"><button className="px-1 py-1 bg-white rounded-2xl">
@@ -133,7 +133,7 @@ export default function TrashModal() {
       </div>
     </div>
 
-    <div className="overflow-hidden rounded">
+     {/*<div className="overflow-hidden rounded">
     <a href="https://vrchat.com/home/user/usr_af1795ea-1e3f-4f24-9337-51676e6a8474"><button className="px-1 py-1 bg-blue-800 rounded-2xl">
     <Image className="inline w-12 h-12 rounded-sm object" src={VRchat} alt="VRChat"/>
     </button></a>
@@ -142,7 +142,7 @@ export default function TrashModal() {
         VRChat
         </p>
       </div>
-    </div>
+    </div>*/}
 
   </div>
   </div>
