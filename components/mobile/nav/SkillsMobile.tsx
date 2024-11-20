@@ -57,7 +57,6 @@ export default function SKillsMobile() {
 <li><details><summary>⚙️ Frameworks</summary>REACT, NEXT, REACT NATIVE, TAILWIND CSS</details></li>
 <li><details><summary>📱 Apps</summary>PWA, TWA, WINDOWS</details></li>
 <li><details><summary>📦 Testing</summary>VITEST, RTL, PLAYWRIGHT</details></li>
-<li><details><summary>🛠️ Softwares</summary>UNITY, FIGMA, CLIP STUDIO PAINT, VSCODE</details></li>
             </ul>
                 </div>
               </div>
