@@ -60,7 +60,7 @@ export default function AboutMeMobile() {
                                     <div className="flex">
                                         <ul className="mb-2 flex-auto space-y-4 text-lg leading-relaxed text-left text-slate-400">
                                             <li><details><summary>👋 About</summary>Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. <br></br> I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps & bots</a>. <br></br>I enjoy as well to create <a className='text-blue-400 no-underline hover:underline' href='https://store.steampowered.com/developer/LinkTheDev'>PC games</a></details></li>
-                                            <li><details><summary>📑 Resume</summary><a className='text-blue-400 no-underline hover:underline' href="https://www.linkedin.com/in/linkthedev/">LinkedIn</a></details></li>
+                                            {/*<li><details><summary>📑 Resume</summary><a className='text-blue-400 no-underline hover:underline' href="https://www.linkedin.com/in/linkthedev/">LinkedIn</a></details></li>*/}
                                             <li><details><summary>🔖 Hobbies</summary>Mystery novels, Drawing, VR, Gaming etc</details></li>
                                         </ul>
                                         </div>
