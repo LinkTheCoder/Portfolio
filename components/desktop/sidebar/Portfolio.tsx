@@ -45,8 +45,8 @@ export default function Portfolio() {
                   {/*body*/}
                   <div className="relative grid flex-auto grid-cols-1 gap-3 p-6 bg-slate-800 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"> 
                   <Projects href="https://github.com/LinkTheCoder/SpaceOutCat" src={SpaceOutCat} title="Space Out Cat" description="A self-care app"/>  
-                  <Projects href="https://github.com/LinkTheCoder/BeastCrimes" src={BeastCrimes} title="Beast Crimes" description="Website of my game Beast Crimes"/> 
-                  <Projects href="https://github.com/LinkTheCoder/Kakong" src={Kakong} title="Kakong" description="A korean learning app"/>
+                {/*  <Projects href="https://github.com/LinkTheCoder/BeastCrimes" src={BeastCrimes} title="Beast Crimes" description="Website of my game Beast Crimes"/> */}
+                 {/* <Projects href="https://github.com/LinkTheCoder/Kakong" src={Kakong} title="Kakong" description="A korean learning app"/> */}
                   <Projects href="https://github.com/LinkTheCoder/Portfolio" src={PortfolioThumbnail} title="Portfolio" description="My windows/android themed portfolio"/>  
 
   </div>

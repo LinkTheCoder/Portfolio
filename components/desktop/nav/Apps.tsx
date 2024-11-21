@@ -82,7 +82,7 @@ export default function TrashModal() {
       </button></a>
       </div>
 
-    <div className="overflow-hidden rounded">
+    {/*<div className="overflow-hidden rounded">
     <a href="https://store.steampowered.com/developer/Link_The_Dev"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={Steam} alt="Steam"/>
       <div className="px-4 py-2">
@@ -91,9 +91,9 @@ export default function TrashModal() {
         </p>
       </div>
       </button></a>
-    </div>
+    </div>*/}
 
-     {/* <div className="overflow-hidden rounded">
+     {/*<div className="overflow-hidden rounded">
 <button onClick={copyDiscordUsername} className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={Discord} alt="Discord"/>
       <div className="px-4 py-2">
