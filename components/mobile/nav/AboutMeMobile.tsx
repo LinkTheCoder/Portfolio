@@ -59,7 +59,7 @@ export default function AboutMeMobile() {
                           />
                                     <div className="flex">
                                         <ul className="mb-2 flex-auto space-y-4 text-lg leading-relaxed text-left text-slate-400">
-                                            <li>Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. <br></br> I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps, bots & games</a>.</li>
+                                            <li>👋 Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. <br></br> I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps, bots & games</a>.</li>
                                         </ul>
                                         </div>
                                     </div>
