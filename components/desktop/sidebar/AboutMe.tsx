@@ -49,9 +49,7 @@ export default function Portfolio() {
                           </div>
                       <div className="flex items-center">
                         <ul className="flex-1 my-4 space-y-6 text-lg leading-relaxed text-left text-slate-400">
-                          <li>👋 Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps & bots</a>. I enjoy as well to create PC games.</li>
-                          {/*<li>📑 <span className="font-medium">Resume:</span> <a className='text-blue-400 no-underline hover:underline' href="https://www.linkedin.com/in/linkthedev/">LinkedIn</a></li>*/}
-                          <li>🔖 <span className="font-medium">Hobbies:</span> Mystery novels, Drawing, VR, Gaming etc</li>
+                          <li>👋 Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. <br></br>I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps, bots & games</a>.</li>
                         </ul>
 </div>
                     </div>
