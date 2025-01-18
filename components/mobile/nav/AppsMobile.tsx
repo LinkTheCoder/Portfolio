@@ -1,11 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import Chrome from '../../../public/img/Chrome.png';
-import SteamMobileIcon from '../../../public/img/SteamMobileIcon.png';
 import GitCatIcon from '../../../public/img/GitCatIcon.png';
-import DiscordIcon from '../../../public/img/DiscordIcon.png';
 import GooglePlay from '../../../public/img/GooglePlayIcon.png';
-import Youtube from '../../../public/img/Youtube.png';
-import VRchat from '../../../public/img/VRchat.png';
+import Gmail from '../../../public/img/Gmail.png';
 import { CgMenuGridO } from 'react-icons/cg';
 import Image from 'next/image';
 
@@ -14,17 +11,6 @@ export default function TrashModal() {
     const modalRef = useRef(null);
 
     const [noticeBox, setNoticeBox] = useState({ visible: false, message: '' });
-
-    const copyDiscordUsername = () => {
-      const discordUsername = 'linkthedev';
-      navigator.clipboard.writeText(discordUsername)
-        .then(() => {
-          setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
-          setTimeout(() => {
-            setNoticeBox({ visible: false, message: '' });
-          }, 1000);
-        })
-    };
 
     const handleButtonClick = (event) => {
         event.stopPropagation(); // Prevent click event from propagating to the document
@@ -78,6 +64,17 @@ export default function TrashModal() {
       </div>
     </div>
 
+    <div className="ml-4 overflow-hidden rounded">
+    <a href="mailto:linkhaggman@gmail.com"><button className="px-1 py-1 bg-white rounded-2xl">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Gmail} alt="Gmail"/>
+    </button></a>
+      <div className="py-2">
+        <p className="text-base text-white">
+        Gmail
+        </p>
+      </div>
+    </div>
+
     <div className="overflow-hidden rounded">
     <a href="https://github.com/LinkTheCoder"><button className="px-1 py-1 rounded-2xl bg-slate-600">
     <Image className="inline w-12 h-12 rounded-sm object" src={GitCatIcon} alt="Github"/>
@@ -89,28 +86,6 @@ export default function TrashModal() {
       </div>
       </div>
 
-   {/* <div className="overflow-hidden rounded">
-    <a href="https://store.steampowered.com/developer/Link_The_Dev"><button className="px-1 py-1 bg-blue-900 rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={SteamMobileIcon} alt="Steam"/>
-    </button></a>
-      <div className="py-2">
-        <p className="text-base text-white">
-        Steam
-        </p>
-      </div>
-    </div>*/}
-
-    {/* <div className="overflow-hidden rounded">
-   <button onClick={copyDiscordUsername} className="px-1 py-1 bg-indigo-500 rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={DiscordIcon} alt="Discord"/>
-    </button>
-      <div className="py-2">
-        <p className="text-base text-white">
-        Discord
-        </p>
-      </div>
-    </div>*/}
-
     <div className="overflow-hidden rounded">
     <a href="https://play.google.com/store/apps/dev?id=7112699078675054520"><button className="px-1 py-1 bg-white rounded-2xl">
     <Image className="inline w-12 h-12 rounded-sm object" src={GooglePlay} alt="Google Play"/>
@@ -121,28 +96,6 @@ export default function TrashModal() {
         </p>
       </div>
     </div>
-
-     {/*<div className="overflow-hidden rounded">
-    <a href="https://www.youtube.com/@Link_The_Penguin"><button className="px-1 py-1 bg-white rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={Youtube} alt="Chrome Web Store"/>
-    </button></a>
-      <div className="py-2">
-        <p className="text-base text-white">
-        YouTube
-        </p>
-      </div>
-    </div>*/}
-
-     {/*<div className="overflow-hidden rounded">
-    <a href="https://vrchat.com/home/user/usr_af1795ea-1e3f-4f24-9337-51676e6a8474"><button className="px-1 py-1 bg-blue-800 rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={VRchat} alt="VRChat"/>
-    </button></a>
-      <div className="py-2">
-        <p className="text-base text-white">
-        VRChat
-        </p>
-      </div>
-    </div>*/}
 
   </div>
   </div>
