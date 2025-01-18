@@ -26,14 +26,6 @@ export default function NavMobile({ fixed }) {
             </li>
 
             <li className="nav-item">
-              <a href="mailto:linkhaggman@gmail.com">
-                <button className='px-1 py-1 bg-white rounded-2xl'>
-                  <Image className="w-13 h-13 md:w-14 md:h-14" src={Gmail} alt="Gmail" />
-                </button>
-              </a>
-            </li>
-
-            <li className="nav-item">
               <a href="https://play.google.com/store/apps/dev?id=7112699078675054520">
                 <button className='px-1 py-1 bg-white rounded-2xl'>
                   <Image className="w-13 h-13 md:w-14 md:h-14" src={GooglePlay} alt="Google Play" />

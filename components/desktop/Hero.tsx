@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { useTheme } from '../../context/ThemeContext';
+import { useTheme } from '../../context/ThemeContext'; // Adjust the path based on your project structure
 import Wallpaper from '../../public/img/Wallpaper.jpg';
 import SamsungWallpaper from '../../public/img/SamsungWallpaper.png';
 import Nav from './nav/Nav';
@@ -13,18 +13,7 @@ const Hero = () => {
 
   useEffect(() => {
     const userAgent = navigator.userAgent.toLowerCase();
-    const isSamsungDeX = userAgent.includes('samsung') && userAgent.includes('desktop');
-    const isAndroidDevice = userAgent.includes('android') && !isSamsungDeX;
-
-    const handleResize = () => {
-      const isMobileView = window.innerWidth <= 1024;
-      setIsAndroid(isAndroidDevice || isMobileView);
-    };
-
-    handleResize(); // Initial check
-    window.addEventListener('resize', handleResize);
-
-    return () => window.removeEventListener('resize', handleResize);
+    setIsAndroid(userAgent.includes('android') || userAgent.includes('iphone') || userAgent.includes('ipad'));
   }, []);
 
   const defaultWallpaper = isAndroid ? SamsungWallpaper : Wallpaper;
