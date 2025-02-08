@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import AvatarIcon from '../../../public/img/AvatarIcon.png';
-import ProfileIcon from '../../../public/img/Profile3.jpg';
+import ProfileIcon from '../../../public/img/Profile.svg';
 import Image from 'next/image';
 
 export default function AboutMeMobile() {

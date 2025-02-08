@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Folder from '../../../public/img/Folder.png';
-import ProfileIcon from '../../../public/img/Profile3.jpg';
+import ProfileIcon from '../../../public/img/Profile.svg';
 import Image from 'next/image';
 
 export default function Portfolio() {
