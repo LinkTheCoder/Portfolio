@@ -53,10 +53,10 @@ export default function SKillsMobile() {
                <div className="relative flex-auto p-6 bg-slate-800/90">
                   <ul className="mt-4 mb-2 space-y-6 text-lg leading-relaxed text-left text-slate-400">
 
-<li><details><summary>🖥️ Code Languages</summary>HTML, CSS, JS, JSX, TS, TSX, NANI, MARKDOWN</details></li>
-<li><details><summary>⚙️ Frameworks</summary>REACT, NEXT, REACT NATIVE, TAILWIND CSS</details></li>
-<li><details><summary>📱 Apps</summary>PWA, TWA, WINDOWS</details></li>
-<li><details><summary>📦 Testing</summary>VITEST, RTL, PLAYWRIGHT</details></li>
+<li><details><summary>🖥️ Code Languages</summary>HTML, CSS, JS, TS, NODE, PYTHON</details></li>
+<li><details><summary>⚙️ Frameworks</summary>REACT, NEXT, REACT NATIVE, EXPRESS</details></li>
+<li><details><summary>📱 Databases</summary>FIREBASE, POSTGRESQL, REDIS</details></li>
+<li><details><summary>📦 DevOps</summary>GIT, VSCODE, DOCKER</details></li>
             </ul>
                 </div>
               </div>
