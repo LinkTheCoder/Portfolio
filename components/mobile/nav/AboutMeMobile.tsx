@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import AvatarIcon from '../../../public/img/AvatarIcon.png';
-import ProfileIcon from '../../../public/img/Profile.svg';
+import ProfileIcon from '../../../public/img/Profile.webp';
 import Image from 'next/image';
 
 export default function AboutMeMobile() {
@@ -45,29 +45,39 @@ export default function AboutMeMobile() {
                 </>
 
                 {showModal ? (
-                        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none modal focus:outline-none">
-                        <div ref={modalRef} className="relative w-auto max-w-3xl mx-auto my-6">
-                            {/*content*/}
-                            <div className="relative flex flex-col w-full border-0 rounded-lg shadow-lg outline-none focus:outline-none">
-                                {/*body*/}
-                                <div className="relative flex-auto p-6 bg-slate-800">
-                                <Image
-                            className="inline object-cover h-28 w-28 rounded-full mb-4"
-                            src={ProfileIcon}
-                            alt="ProfileIcon"
-                          />
-                                    <div className="flex">
-                                        <ul className="mb-2 flex-auto space-y-4 text-lg leading-relaxed text-left text-slate-400">
-                                            <li>👋 Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. <br></br> I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps, bots & games</a>.</li>
-                                        </ul>
+                    <>
+                        <div className="fixed inset-0 z-40 backdrop-blur-sm bg-black/50"></div>
+                        <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none modal focus:outline-none">
+                            <div ref={modalRef} className="relative w-auto max-w-3xl mx-auto my-6">
+                                {/*content*/}
+                                <div className="relative flex flex-col w-full border-0 shadow-lg outline-none focus:outline-none">
+                                    {/*body*/}
+                                    <div className="relative flex-auto p-6 bg-slate-800/90">
+                                        <div className="flex flex-col items-start">
+                                            <Image
+                                                className="inline object-cover h-28 w-28 rounded-full mb-4"
+                                                src={ProfileIcon}
+                                                alt="ProfileIcon"
+                                            />
+                                        </div>
+                                        <div className="flex items-center">
+                                            <div className="flex-1 my-4 space-y-2 text-lg leading-relaxed text-left text-slate-400">
+                                                <h1 className="text-xl font-bold text-slate-300">✦LINK✦</h1>
+                                                <p className="text-sm text-slate-300">linkthecoder • he/him</p>
+                                                <ul>
+                                                    <li>🌍 | Swede
+                                                        <br></br>🎂 | 30s
+                                                        <br></br>👨‍💻 | Developer
+                                                        <br></br>✍️ | Hobbies: Art, Coding, VR, Mystery Novels etc.
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="fixed inset-0 z-40 backdrop-blur-sm bg-black/50"></div>
-                    </div>
+                    </>
                 ) : null}
             </div>
         </div>

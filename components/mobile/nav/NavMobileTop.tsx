@@ -16,10 +16,6 @@ export default function NavMobileTop({ fixed }) {
               </li>
 
               <li className="nav-item">
-              <SKillsMobile/>
-              </li>
-
-              <li className="nav-item">
               <PortfolioMobile/>
               </li>
             </ul>

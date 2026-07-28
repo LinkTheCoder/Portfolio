@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Chrome from '../../../public/img/Chrome.png';
-import Gmail from '../../../public/img/Gmail.png';
-import GooglePlay from '../../../public/img/GooglePlayIcon.png';
+import Telegram from '../../../public/img/TelegramMobile.png';
 import GitCatIcon from '../../../public/img/GitCatIcon.png';
 import NavMobileTop from './NavMobileTop';
 import NavMobileBottom from './NavMobileBottom';
@@ -26,9 +25,9 @@ export default function NavMobile({ fixed }) {
             </li>
 
             <li className="nav-item">
-              <a href="https://play.google.com/store/apps/dev?id=7112699078675054520">
-                <button className='px-1 py-1 bg-white rounded-2xl'>
-                  <Image className="w-13 h-13 md:w-14 md:h-14" src={GooglePlay} alt="Google Play" />
+              <a href="https://t.me/LinkTheCoder">
+                <button className='px-1 py-1 bg-blue-400 rounded-2xl'>
+                  <Image className="w-13 h-13 md:w-14 md:h-14" src={Telegram} alt="Telegram" />
                 </button>
               </a>
             </li>

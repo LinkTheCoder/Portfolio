@@ -25,10 +25,6 @@ const Bar = () => {
      <Portfolio/>
          </li>
 
-          {/* RESUME */}
-          <li>
-     <Skills/>
-         </li>
       </ul>
    </div>
 </aside>

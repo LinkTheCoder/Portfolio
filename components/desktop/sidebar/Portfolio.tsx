@@ -1,7 +1,5 @@
 import React from "react";
 import Folder from '../../../public/img/Folder.png';
-import Kakong from '../../../public/img/KakongThumbnail.png';
-import BeastCrimes from '../../../public/img/BCThumbnail.png';
 import SpaceOutCat from '../../../public/img/SPCThumbnail.png';
 import PortfolioThumbnail from '../../../public/img/PortfolioThumbnail.png';
 import Projects from '../props/Projects';
@@ -12,13 +10,13 @@ export default function Portfolio() {
     return (
         <ul>  
             
-            {/* PORTFOLIO */}
+            {/* CODING */}
            <li>
            <>
            <button  onClick={() => setShowModal(true)} className="text-white rounded hover:bg-white/20">
               <Image className="h-auto max-w-full" src={Folder} alt="image description">
               </Image>
-              <p>Portfolio</p>
+              <p>Coding</p>
             </button>
         {showModal ? (
           <>
@@ -31,7 +29,7 @@ export default function Portfolio() {
                   {/*header*/}
                   <div className="rounded-t-lg flex items-start justify-between p-5 border-b border-solid bg-slate-800 border-slate-400">
                     <h3 className="text-3xl font-semibold text-slate-400">
-                   PORTFOLIO
+                   CODING
                     </h3>
                     <button
                       className="float-right p-1 ml-auto text-3xl font-semibold leading-none text-black bg-transparent border-0 outline-none focus:outline-none"

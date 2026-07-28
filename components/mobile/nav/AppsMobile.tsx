@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import Chrome from '../../../public/img/Chrome.png';
 import GitCatIcon from '../../../public/img/GitCatIcon.png';
-import GooglePlay from '../../../public/img/GooglePlayIcon.png';
-import Gmail from '../../../public/img/Gmail.png';
+import Telegram from '../../../public/img/TelegramMobile.png';
+import Tumblr from '../../../public/img/TumblrMobile.png';
+import SteamIcon from '../../../public/img/SteamMobileIcon.png';
+import Discord from '../../../public/img/DiscordIcon.png';
 import { CgMenuGridO } from 'react-icons/cg';
 import Image from 'next/image';
 
@@ -75,17 +77,50 @@ export default function TrashModal() {
       </div>
       </div>
 
-    <div className="overflow-hidden rounded">
-    <a href="https://play.google.com/store/apps/dev?id=7112699078675054520"><button className="px-1 py-1 bg-white rounded-2xl">
-    <Image className="inline w-12 h-12 rounded-sm object" src={GooglePlay} alt="Google Play"/>
+       <div className="overflow-hidden rounded">
+    <a href="https://steamcommunity.com/id/LinkTheCoder/"><button className="px-1 py-1 rounded-2xl bg-blue-900">
+    <Image className="inline w-12 h-12 rounded-sm object" src={SteamIcon} alt="Steam"/>
     </button></a>
       <div className="py-2">
         <p className="text-base text-white">
-        Google Play
+        Steam
         </p>
       </div>
-    </div>
+      </div>
 
+       <div className="overflow-hidden rounded">
+    <a href="https://t.me/LinkTheCoder"><button className="px-1 py-1 rounded-2xl bg-blue-400">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Telegram} alt="Telegram"/>
+    </button></a>
+      <div className="py-2">
+        <p className="text-base text-white">
+        Telegram
+        </p>
+      </div>
+      </div>
+
+ <div className="overflow-hidden rounded">
+    <a href="https://discord.com/invite/LinkTheCoder"><button className="px-1 py-1 rounded-2xl bg-indigo-500">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Discord} alt="Discord"/>
+    </button></a>
+      <div className="py-2">
+        <p className="text-base text-white">
+        Discord
+        </p>
+      </div>
+      </div>
+
+       <div className="overflow-hidden rounded">
+    <a href="https://linkthecoder.tumblr.com/"><button className="px-1 py-1 rounded-2xl bg-blue-900">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Tumblr} alt="Tumblr"/>
+    </button></a>
+      <div className="py-2">
+        <p className="text-base text-white">
+        Tumblr
+        </p>
+      </div>
+      </div>
+ 
   </div>
   </div>
   </div>

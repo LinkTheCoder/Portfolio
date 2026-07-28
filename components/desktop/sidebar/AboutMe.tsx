@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Folder from '../../../public/img/Folder.png';
-import ProfileIcon from '../../../public/img/Profile.svg';
+import ProfileIcon from '../../../public/img/Profile.webp';
 import Image from 'next/image';
 
 export default function Portfolio() {
@@ -25,9 +25,6 @@ export default function Portfolio() {
                   <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
                     {/*header*/}
                     <div className="rounded-t-lg flex items-start justify-between p-5 border-b border-solid bg-slate-800 border-slate-400">
-                      <h3 className="text-3xl font-semibold uppercase text-slate-400">
-                        About Me
-                      </h3>
                       <button
                         className="float-right p-1 ml-auto text-3xl font-semibold leading-none text-black bg-transparent border-0 outline-none focus:outline-none"
                         onClick={() => setShowModal(false)}
@@ -40,7 +37,7 @@ export default function Portfolio() {
                     {/* body */}
                           
                     <div className="rounded-b-lg relative flex-auto p-6 bg-slate-800">
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-start">
                     <Image
                             className="inline object-cover h-28 w-28 rounded-full mb-4"
                             src={ProfileIcon}
@@ -48,9 +45,17 @@ export default function Portfolio() {
                           />
                           </div>
                       <div className="flex items-center">
-                        <ul className="flex-1 my-4 space-y-6 text-lg leading-relaxed text-left text-slate-400">
-                          <li>👋 Hi, My name is <span className="font-medium">Link</span>! A Front-End Developer. <br></br>I like to code and design <a className='text-blue-400 no-underline hover:underline' href='https://github.com/LinkTheCoder'>websites, apps, bots & games</a>.</li>
-                        </ul>
+                        <div className="flex-1 my-4 space-y-2 text-lg leading-relaxed text-left text-slate-400">
+                          <h1 className="text-xl font-bold text-slate-300">✦LINK✦</h1>
+                          <p className="text-sm text-slate-300">linkthecoder • he/him</p>
+                          <ul>
+                            <li>🌍 | Swede
+                               <br></br>🎂 | 30s
+                               <br></br>👨‍💻 | Developer
+                               <br></br>✍️ | Hobbies: Art, Coding, VR, Mystery Novels etc.
+                            </li>
+                          </ul>
+                        </div>
 </div>
                     </div>
                   </div>

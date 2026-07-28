@@ -45,7 +45,7 @@ export default function PortfolioMobile() {
               <Image className="w-9 h-9 md:w-10 md:h-10" src={PortfolioIcon} alt="image description">
               </Image>
             </button>
-            <p className="mt-1 text-white">Portfolio</p>
+            <p className="mt-1 text-white">Coding</p>
         {showModal ? (
           <>
             <div

@@ -5,8 +5,8 @@ import Steam from '../../../public/img/Steam.png';
 import Windows from '../../../public/img/Windows.png';
 import Github from '../../../public/img/Github.png';
 import Discord from '../../../public/img/Discord.png';
-import GooglePlay from '../../../public/img/GooglePlayIcon.png';
-import Youtube from '../../../public/img/Youtube.png';
+import Telegram from '../../../public/img/Telegram.png';
+import Tumblr from '../../../public/img/Tumblr.png'
 import VRchat from '../../../public/img/VRchat.png';
 
 export default function TrashModal() {
@@ -82,8 +82,8 @@ export default function TrashModal() {
       </button></a>
       </div>
 
-    {/*<div className="overflow-hidden rounded">
-    <a href="https://store.steampowered.com/developer/Link_The_Dev"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+    <div className="overflow-hidden rounded">
+    <a href="https://steamcommunity.com/id/LinkTheCoder/"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={Steam} alt="Steam"/>
       <div className="px-4 py-2">
         <p className="text-base text-slate-400">
@@ -91,9 +91,9 @@ export default function TrashModal() {
         </p>
       </div>
       </button></a>
-    </div>*/}
+    </div>
 
-     {/*<div className="overflow-hidden rounded">
+     <div className="overflow-hidden rounded">
 <button onClick={copyDiscordUsername} className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={Discord} alt="Discord"/>
       <div className="px-4 py-2">
@@ -102,31 +102,20 @@ export default function TrashModal() {
         </p>
       </div>
       </button>
-    </div>*/}
+    </div>
 
-    <div className="overflow-hidden rounded">
-    <a href="https://play.google.com/store/apps/dev?id=7112699078675054520"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
-    <Image className="inline w-12 h-12 rounded-sm object" src={GooglePlay} alt="Google Play"/>
-      <div className="px-2 py-2">
+      <div className="overflow-hidden rounded">
+    <a href="https://web.telegram.org/"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Telegram} alt="Telegram"/>
+      <div className="px-4 py-2">
         <p className="text-base text-slate-400">
-        Google Play
+        Telegram
         </p>
       </div>
       </button></a>
     </div>
 
-    {/*<div className="overflow-hidden rounded">
-    <a href="https://www.youtube.com/@Link_The_Penguin"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
-    <Image className="inline w-12 h-12 rounded-sm object" src={Youtube} alt="Chrome web Store"/>
-      <div className="px-2 py-2">
-        <p className="text-base text-slate-400">
-        YouTube
-        </p>
-      </div>
-      </button></a>
-    </div>*/}
-
-    {/*<div className="overflow-hidden rounded">
+    <div className="overflow-hidden rounded">
     <a href="https://vrchat.com/home/user/usr_af1795ea-1e3f-4f24-9337-51676e6a8474"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={VRchat} alt="VRChat"/>
       <div className="px-4 py-2">
@@ -135,7 +124,18 @@ export default function TrashModal() {
         </p>
       </div>
       </button></a>
-    </div>*/}
+    </div>
+
+     <div className="overflow-hidden rounded">
+    <a href="https://linkthecoder.tumblr.com/"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Tumblr} alt="Tumblr"/>
+      <div className="px-4 py-2">
+        <p className="text-base text-slate-400">
+        Tumblr
+        </p>
+      </div>
+      </button></a>
+    </div>
     
   </div>
   </div>
