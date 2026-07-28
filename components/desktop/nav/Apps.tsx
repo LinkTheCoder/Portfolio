@@ -14,7 +14,7 @@ export default function TrashModal() {
     const [noticeBox, setNoticeBox] = useState({ visible: false, message: '' });
 
     const copyDiscordUsername = () => {
-      const discordUsername = 'linkthedev';
+      const discordUsername = 'linkthecoder';
       navigator.clipboard.writeText(discordUsername)
         .then(() => {
           setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
