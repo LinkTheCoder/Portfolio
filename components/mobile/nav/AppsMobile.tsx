@@ -99,17 +99,6 @@ export default function TrashModal() {
       </div>
       </div>
 
-       <div className="overflow-hidden rounded">
-    <a href="https://t.me/LinkTheCoder"><button className="px-1 py-1 rounded-2xl bg-blue-400">
-    <Image className="inline w-12 h-12 rounded-sm object" src={Telegram} alt="Telegram"/>
-    </button></a>
-      <div className="py-2">
-        <p className="text-base text-white">
-        Telegram
-        </p>
-      </div>
-      </div>
-
  <div className="overflow-hidden rounded">
     <button onClick={copyDiscordUsername} className="px-1 py-1 rounded-2xl bg-indigo-500">
     <Image className="inline w-12 h-12 rounded-sm object" src={Discord} alt="Discord"/>

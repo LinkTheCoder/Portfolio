@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Chrome from '../../../public/img/Chrome.png';
-import Telegram from '../../../public/img/TelegramMobile.png';
+import DiscordIcon from '../../../public/img/DiscordIcon.png';
 import GitCatIcon from '../../../public/img/GitCatIcon.png';
 import NavMobileTop from './NavMobileTop';
 import NavMobileBottom from './NavMobileBottom';
@@ -9,6 +9,13 @@ import Image from 'next/image';
 export default function NavMobile({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [noticeBox, setNoticeBox] = useState({ visible: false, message: '' });
+
+  const copyDiscordUsername = () => {
+    navigator.clipboard.writeText('linkthecoder').then(() => {
+      setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
+      setTimeout(() => setNoticeBox({ visible: false, message: '' }), 1000);
+    });
+  };
 
   return (
     <div className="fixed bottom-0 w-full">
@@ -25,11 +32,9 @@ export default function NavMobile({ fixed }) {
             </li>
 
             <li className="nav-item">
-              <a href="https://t.me/LinkTheCoder">
-                <button className='px-1 py-1 bg-blue-400 rounded-2xl'>
-                  <Image className="w-13 h-13 md:w-14 md:h-14" src={Telegram} alt="Telegram" />
-                </button>
-              </a>
+              <button onClick={copyDiscordUsername} className='px-1 py-1 bg-indigo-500 rounded-2xl'>
+                <Image className="w-13 h-13 md:w-14 md:h-14" src={DiscordIcon} alt="Discord" />
+              </button>
             </li>
 
             <li className="nav-item">

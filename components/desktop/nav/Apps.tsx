@@ -104,17 +104,6 @@ export default function TrashModal() {
       </button>
     </div>
 
-      <div className="overflow-hidden rounded">
-    <a href="https://web.telegram.org/"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
-    <Image className="inline w-12 h-12 rounded-sm object" src={Telegram} alt="Telegram"/>
-      <div className="px-4 py-2">
-        <p className="text-base text-slate-400">
-        Telegram
-        </p>
-      </div>
-      </button></a>
-    </div>
-
     <div className="overflow-hidden rounded">
     <a href="https://vrchat.com/home/user/usr_af1795ea-1e3f-4f24-9337-51676e6a8474"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
     <Image className="inline w-12 h-12 rounded-sm object" src={VRchat} alt="VRChat"/>
