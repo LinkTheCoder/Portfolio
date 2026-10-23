@@ -5,9 +5,8 @@ import Steam from '../../../public/img/Steam.png';
 import Windows from '../../../public/img/Windows.png';
 import Github from '../../../public/img/Github.png';
 import Discord from '../../../public/img/Discord.png';
-import Telegram from '../../../public/img/Telegram.png';
-import Tumblr from '../../../public/img/Tumblr.png'
 import VRchat from '../../../public/img/VRchat.png';
+import Sharkey from '../../../public/img/sharkey_icon.png';
 
 export default function TrashModal() {
     const [showModal, setShowModal] = React.useState(false);
@@ -116,11 +115,11 @@ export default function TrashModal() {
     </div>
 
      <div className="overflow-hidden rounded">
-    <a href="https://linkthecoder.tumblr.com/"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
-    <Image className="inline w-12 h-12 rounded-sm object" src={Tumblr} alt="Tumblr"/>
+    <a href="https://blahaj.zone/@linkthecoder"><button className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Sharkey} alt="Sharkey"/>
       <div className="px-4 py-2">
         <p className="text-base text-slate-400">
-        Tumblr
+        Sharkey
         </p>
       </div>
       </button></a>

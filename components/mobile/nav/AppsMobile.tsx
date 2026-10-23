@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Chrome from '../../../public/img/Chrome.png';
 import GitCatIcon from '../../../public/img/GitCatIcon.png';
-import Telegram from '../../../public/img/TelegramMobile.png';
-import Tumblr from '../../../public/img/TumblrMobile.png';
+import Sharkey from '../../../public/img/sharkey_icon.png';
 import SteamIcon from '../../../public/img/SteamMobileIcon.png';
 import Discord from '../../../public/img/DiscordIcon.png';
 import { CgMenuGridO } from 'react-icons/cg';
@@ -111,12 +110,12 @@ export default function TrashModal() {
       </div>
 
        <div className="overflow-hidden rounded">
-    <a href="https://linkthecoder.tumblr.com/"><button className="px-1 py-1 rounded-2xl bg-blue-900">
-    <Image className="inline w-12 h-12 rounded-sm object" src={Tumblr} alt="Tumblr"/>
+    <a href="https://blahaj.zone/@linkthecoder"><button className="px-1 py-1 rounded-2xl bg-white">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Sharkey} alt="Sharkey"/>
     </button></a>
       <div className="py-2">
         <p className="text-base text-white">
-        Tumblr
+        Sharkey
         </p>
       </div>
       </div>

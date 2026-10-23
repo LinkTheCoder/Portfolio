@@ -2,6 +2,8 @@ import React from 'react'
 import AboutMeMobile from './AboutMeMobile';
 import SKillsMobile from './SkillsMobile';
 import PortfolioMobile from './PortfolioMobile';
+import Image from 'next/image';
+import ArtfolioIcon from '../../../public/img/Shortcut_Icon_Mobile.png';
 
 
 export default function NavMobileTop({ fixed }) {
@@ -17,6 +19,20 @@ export default function NavMobileTop({ fixed }) {
 
               <li className="nav-item">
               <PortfolioMobile/>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  href="https://artfolio.linkthecoder.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-white"
+                >
+                  <span className="flex h-[52px] w-[52px] items-center justify-center">
+                    <Image className="h-14 w-18" src={ArtfolioIcon} alt="Artfolio" />
+                  </span>
+                  <p className="mt-1">Artfolio</p>
+                </a>
               </li>
             </ul>
           </div>
