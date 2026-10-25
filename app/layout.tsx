@@ -13,6 +13,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        <link rel="me" href="https://blahaj.zone/@linkthecoder" />
+      </head>
       <body className={inter.className}>
         {children}
       </body>
