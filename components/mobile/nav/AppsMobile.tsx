@@ -4,6 +4,7 @@ import GitCatIcon from '../../../public/img/GitCatIcon.png';
 import Sharkey from '../../../public/img/sharkey_icon.png';
 import SteamIcon from '../../../public/img/SteamMobileIcon.png';
 import Discord from '../../../public/img/DiscordIcon.png';
+import Fluxer from '../../../public/img/FluxerIcon.png';
 import { CgMenuGridO } from 'react-icons/cg';
 import Image from 'next/image';
 
@@ -13,9 +14,8 @@ export default function TrashModal() {
 
     const [noticeBox, setNoticeBox] = useState({ visible: false, message: '' });
 
-    const copyDiscordUsername = () => {
-      const discordUsername = 'linkthecoder';
-      navigator.clipboard.writeText(discordUsername)
+    const copyUsername = (username: string) => {
+      navigator.clipboard.writeText(username)
         .then(() => {
           setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
           setTimeout(() => {
@@ -23,6 +23,9 @@ export default function TrashModal() {
           }, 1000);
         });
     };
+
+    const copyDiscordUsername = () => copyUsername('linkthecoder');
+    const copyFluxerUsername = () => copyUsername('linkthecoder#4871');
 
     const handleButtonClick = (event) => {
         event.stopPropagation(); // Prevent click event from propagating to the document
@@ -116,6 +119,17 @@ export default function TrashModal() {
       <div className="py-2">
         <p className="text-base text-white">
         Sharkey
+        </p>
+      </div>
+      </div>
+
+ <div className="overflow-hidden rounded">
+    <button onClick={copyFluxerUsername} className="px-1 py-1 bg-[#4641D9] rounded-2xl">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Fluxer} alt="Fluxer"/>
+    </button>
+      <div className="py-2">
+        <p className="text-base text-white">
+        Fluxer
         </p>
       </div>
       </div>

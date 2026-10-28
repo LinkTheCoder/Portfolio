@@ -5,6 +5,7 @@ import Steam from '../../../public/img/Steam.png';
 import Windows from '../../../public/img/Windows.png';
 import Github from '../../../public/img/Github.png';
 import Discord from '../../../public/img/Discord.png';
+import Fluxer from '../../../public/img/Fluxer.png';
 import VRchat from '../../../public/img/VRchat.png';
 import Sharkey from '../../../public/img/sharkey_icon.png';
 
@@ -12,9 +13,8 @@ export default function TrashModal() {
     const [showModal, setShowModal] = React.useState(false);
     const [noticeBox, setNoticeBox] = useState({ visible: false, message: '' });
 
-    const copyDiscordUsername = () => {
-      const discordUsername = 'linkthecoder';
-      navigator.clipboard.writeText(discordUsername)
+    const copyUsername = (username: string) => {
+      navigator.clipboard.writeText(username)
         .then(() => {
           setNoticeBox({ visible: true, message: 'Username copied to clipboard' });
           setTimeout(() => {
@@ -22,6 +22,9 @@ export default function TrashModal() {
           }, 1000);
         })
     };
+
+    const copyDiscordUsername = () => copyUsername('linkthecoder');
+    const copyFluxerUsername = () => copyUsername('linkthecoder#4871');
 
     return (
         <ul>  
@@ -112,6 +115,17 @@ export default function TrashModal() {
         </p>
       </div>
       </button></a>
+    </div>
+
+     <div className="overflow-hidden rounded">
+<button onClick={copyFluxerUsername} className="px-2 py-2 text-white rounded bg-slate-800 hover:bg-slate-700">
+    <Image className="inline w-12 h-12 rounded-sm object" src={Fluxer} alt="Fluxer"/>
+      <div className="px-4 py-2">
+        <p className="text-base text-slate-400">
+        Fluxer
+        </p>
+      </div>
+      </button>
     </div>
 
      <div className="overflow-hidden rounded">
